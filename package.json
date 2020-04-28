@@ -1,0 +1,30 @@
+{
+  "name": "eslint-config-devextreme",
+  "version": "0.1.0",
+  "description": "ESLint Configurations for the DevExtreme Source Code",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DevExpress/eslint-config-devextreme.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Developer Express Inc."
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-typescript": "^7.2.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-jest-formatting": "^1.2.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-qunit": "^4.0.0",
+    "eslint-plugin-spellcheck": "^0.0.14"
+  },
+  "main": "./index.js",
+  "keywords": [
+    "eslint",
+    "devextreme",
+    "devexpress"
+  ]
+}
