@@ -11,6 +11,9 @@ module.exports = {
 
         // Disable React dependency validation. Declarations do not require this dependency, 
         // since they are not proper React components
-        'react/react-in-jsx-scope': ['off']
+        'react/react-in-jsx-scope': ['off'],
+
+        // Allow function calls in the ternary operator
+        '@typescript-eslint/no-unused-expressions': ['error', { 'allowShortCircuit': true, 'allowTernary': true }]
     }
 };

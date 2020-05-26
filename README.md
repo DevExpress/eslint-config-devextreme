@@ -75,6 +75,12 @@ Lists words that the spell check should ignore.
     'react/react-in-jsx-scope': ['off']
     ```
 
+  - Allow function calls in the ternary operator.
+  
+    ```javascript
+     '@typescript-eslint/no-unused-expressions': ['error', { 'allowShortCircuit': true, ;'allowTernary': true }]
+    ```
+
 ## Jest Tests
 
 - **Usage**
@@ -137,19 +143,20 @@ Lists words that the spell check should ignore.
   
 - **Required plugins**
   - [qunit](https://github.com/platinumazure/eslint-plugin-qunit)
+
+- **Extended plugins**
+  - [`plugin:qunit/recommended`](https://github.com/platinumazure/eslint-plugin-qunit#recommended)
+  - [`plugin:qunit/two`](https://github.com/platinumazure/eslint-plugin-qunit#two)
   
 - **Overrides**
   
     ```javascript
-    'qunit/assert-args': 'error',
-    'qunit/literal-compare-order': 'error',
     'qunit/no-arrow-tests': 'error',
-    'qunit/no-async-in-loops': 'error',
-    'qunit/no-commented-tests': 'warn',
+    'qunit/no-commented-tests': 'error',
     'qunit/no-identical-names': 'warn',
-    'qunit/no-ok-equality': 'error',
-    'qunit/no-only': 'error',
-    'qunit/no-setup-teardown': 'error'
+    'qunit/no-global-module-test': 'off',
+    'qunit/require-expect': 'off',
+    'qunit/resolve-async': 'off'
     ```
 
 ## TestCafe Tests
