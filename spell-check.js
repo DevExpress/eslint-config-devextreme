@@ -425,7 +425,11 @@ module.exports = {
                 'xhr',
                 'xlsx',
                 'xml',
-                'xmlns'
+                'xmlns',
+                "exdate",
+                "dtstart",
+                "rrule",
+                "wkst"
             ]
         }]
     }
