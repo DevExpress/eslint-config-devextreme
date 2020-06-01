@@ -1,6 +1,7 @@
 module.exports = {
     extends: [
-        'devextreme/typescript'
+        'devextreme/typescript',
+        'devextreme/spell-check'
     ],
     rules: {
         // Allow devDependencies to be imported when in development mode
