@@ -8,7 +8,8 @@ module.exports = {
     ],
     extends: [
         'plugin:qunit/recommended',
-        'plugin:qunit/two'
+        'plugin:qunit/two',
+        'devextreme/spell-check'
     ],
     globals: {
         define: true,

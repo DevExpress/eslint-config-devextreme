@@ -54,6 +54,7 @@ Lists words that the spell check should ignore.
 
 - **Extended configurations**
   - [`devextreme/typescript`](#typescript)
+  - [`devextreme/spell-check`](#spell-check)
 
 - **Overrides**
 
@@ -89,6 +90,10 @@ Lists words that the spell check should ignore.
     ```javascript
     'extends': ['devextreme/jest']
     ```
+
+- **Extended configurations**
+  - [`devextreme/typescript`](#typescript)
+  - [`devextreme/spell-check`](#spell-check)
 
 - **Environment**
   - `node` (Node.js global variables and scope)
@@ -137,6 +142,9 @@ Lists words that the spell check should ignore.
     'extends': ['devextreme/qunit']
     ```
 
+- **Extended configurations**
+  - [`devextreme/spell-check`](#spell-check)
+
 - **Environment**
   - `qunit` (QUnit global variables)
   - `browser` (Browser global variables)
@@ -161,4 +169,23 @@ Lists words that the spell check should ignore.
 
 ## TestCafe Tests
 
-Coming soon...
+- **Usage**
+    Add the following line to your *.eslintrc* file:
+
+    ```javascript
+    'extends': ['devextreme/testcafe']
+    ```
+
+- **Extended configurations**
+  - [`devextreme/typescript`](#typescript)
+  - [`devextreme/spell-check`](#spell-check)
+
+- **Environment**
+  - `node` (Node.js global variables and scope)
+  - `browser` (Browser global variables)
+  - `jquery` (jQuery global variables)
+
+- **Additional global variables**
+  - `test`
+  - `fixture`  
+  

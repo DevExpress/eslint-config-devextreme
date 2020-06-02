@@ -426,10 +426,11 @@ module.exports = {
                 'xlsx',
                 'xml',
                 'xmlns',
-                "exdate",
-                "dtstart",
-                "rrule",
-                "wkst"
+                'exdate',
+                'dtstart',
+                'rrule',
+                'wkst',
+                'eql' // TestCafe
             ]
         }]
     }
