@@ -185,7 +185,7 @@ Lists words that the spell check should ignore.
   - `browser` (Browser global variables)
   - `jquery` (jQuery global variables)
 
-- **The additional global variables**
+- **Additional global variables**
   - `test`
   - `fixture`  
   
