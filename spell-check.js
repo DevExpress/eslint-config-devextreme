@@ -430,7 +430,8 @@ module.exports = {
                 'dtstart',
                 'rrule',
                 'wkst',
-                'eql' // TestCafe
+                'eql', // TestCafe
+                'dxr' // Renovated components prefix (dxrButton for example) 
             ]
         }]
     }
