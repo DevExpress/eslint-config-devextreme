@@ -5,5 +5,8 @@ module.exports = {
     extends: [
         'plugin:@typescript-eslint/recommended',
         'airbnb-typescript'
-    ]
+    ],
+    rules: {
+        'import/prefer-default-export': 'off'
+    }
 };
