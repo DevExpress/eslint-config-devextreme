@@ -13,13 +13,13 @@ module.exports = {
         fixture: true
     },
     rules: {
-        // Tests can use any type of dependencies
+        // Allow using any types of dependencies
         'import/no-extraneous-dependencies': 'off',
 
-        // We should test event handlers that use modified params to work
+        // Allow modifying parameters in event handlers to test these use cases
         'no-param-reassign': ['error', { 'props': false }],
 
-        // It's a common case for the TestCafe tests that does not affect the performance
+        // Allow `await` inside of loops. This is a common case for TestCafe tests
         'no-await-in-loop': 'off'
     }
 };

@@ -182,19 +182,19 @@ Lists words that the spell check should ignore.
 
 - **Overrides**
 
-  - Tests can use any type of dependencies.
+  - Allow using any types of dependencies:
 
     ```javascript
     'import/no-extraneous-dependencies': 'off'
     ```
 
-  - We should test event handlers that use modified params to work.
+  - Allow modifying parameters in event handlers to test these use cases:
   
     ```javascript
     'no-param-reassign': ['error', { 'props': false }],
     ```
 
-  - It's a common case for the TestCafe tests that does not affect the performance.
+  - Allow `await` inside of loops. This is a common case for TestCafe tests.
   
     ```javascript
     'no-await-in-loop': 'off'
