@@ -180,6 +180,26 @@ Lists words that the spell check should ignore.
   - [`devextreme/typescript`](#typescript)
   - [`devextreme/spell-check`](#spell-check)
 
+- **Overrides**
+
+  - Allow using any types of dependencies:
+
+    ```javascript
+    'import/no-extraneous-dependencies': 'off'
+    ```
+
+  - Allow modifying parameters in event handlers to test these use cases:
+  
+    ```javascript
+    'no-param-reassign': ['error', { 'props': false }],
+    ```
+
+  - Allow `await` inside of loops. This is a common case for TestCafe tests.
+  
+    ```javascript
+    'no-await-in-loop': 'off'
+    ```
+
 - **Environment**
   - `node` (Node.js global variables and scope)
   - `browser` (Browser global variables)
