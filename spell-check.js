@@ -30,6 +30,7 @@ module.exports = {
                 'vm', // view-model
     
                 'amd',          // AMD modules
+                'ast',          // Abstract Syntax Tree
                 'bing',
                 'browserslist', // auto-prefixer browsers list
                 'cldr',         // Unicode CLDR Project
