@@ -133,6 +133,12 @@ Lists words that the spell check should ignore.
     'jsx-a11y/no-access-key': 'off'
     ```
 
+  - Allow the use `expect` inside of 'each.test' block:
+    
+    ```javascript
+    'jest/no-standalone-expect': [ 'error', { 'additionalTestBlockFunctions': ['each.test'] } ]
+    ```
+
 ## QUnit Tests
 
 - **Usage**
