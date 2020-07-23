@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-devextreme",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "ESLint Configurations for the DevExtreme Source Code",
   "repository": {
     "type": "git",
