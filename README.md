@@ -7,11 +7,12 @@ This repository collects ESLint configurations that enforce the code style used 
 ## List of Configurations
 
   1. [TypeScript](#typescript)
-  1. [Spell Check](#spell-check)
-  1. [Renovation Declarations](#renovation-declarations)
-  1. [Jest Tests](#jest-tests)
-  1. [QUnit Tests](#qunit-tests)
-  1. [TestCafe Tests](#testcafe-tests)
+  2. [JavaScript](#javascript)
+  3. [Spell Check](#spell-check)
+  4. [Renovation Declarations](#renovation-declarations)
+  5. [Jest Tests](#jest-tests)
+  6. [QUnit Tests](#qunit-tests)
+  7. [TestCafe Tests](#testcafe-tests)
 
 ## TypeScript
 
@@ -28,6 +29,18 @@ This repository collects ESLint configurations that enforce the code style used 
 - **Extended plugins and configurations**
   - [`plugin:@typescript-eslint/recommended`](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#recommended-configs)
   - [`airbnb-typescript`](https://github.com/iamturns/eslint-config-airbnb-typescript)
+
+## JavaScript
+
+- **Usage**
+    Add the following line to your *.eslintrc* file:
+
+    ```javascript
+    'extends': ['devextreme/javascript']
+    ```
+  
+- **Extended plugins and configurations**
+  - [`airbnb-base`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
   
 ## Spell Check
 
