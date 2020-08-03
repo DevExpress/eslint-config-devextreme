@@ -147,9 +147,17 @@ Lists words that the spell check should ignore.
     ```
 
   - Allow the use of `expect` inside an `each(...).test` block:
-    
+
     ```javascript
     'jest/no-standalone-expect': [ 'error', { 'additionalTestBlockFunctions': ['each.test'] } ]
+    ```
+
+  - ```javascript
+    '@typescript-eslint/explicit-function-return-type': 'off'
+    ```
+
+  - ```javascript
+    '@typescript-eslint/no-explicit-any': 'off'
     ```
 
 ## QUnit Tests
