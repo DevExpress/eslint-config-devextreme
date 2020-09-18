@@ -29,6 +29,8 @@ module.exports = {
                 'xy', // XY-diagram
                 'vm', // view-model
     
+                'cjs',
+                'esm',
                 'amd',          // AMD modules
                 'ast',          // Abstract Syntax Tree
                 'bing',
@@ -384,6 +386,7 @@ module.exports = {
                 'tooltips',
                 'transclude',
                 'transcluded',
+                'transpile',
                 'treeview',
                 'turndown',
                 'uid',
