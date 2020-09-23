@@ -26,9 +26,6 @@ module.exports = {
         // Allow defining the widget's `accessKey` attribute
         'jsx-a11y/no-access-key': 'off',
 
-        // Allow the use of `expect` inside an `each(...).test` block
-        'jest/no-standalone-expect': [ 'error', { 'additionalTestBlockFunctions': ['each.test'] } ],
-
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/no-explicit-any': 'off'
     }

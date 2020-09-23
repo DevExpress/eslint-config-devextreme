@@ -146,12 +146,6 @@ Lists words that the spell check should ignore.
     'jsx-a11y/no-access-key': 'off'
     ```
 
-  - Allow the use of `expect` inside an `each(...).test` block:
-
-    ```javascript
-    'jest/no-standalone-expect': [ 'error', { 'additionalTestBlockFunctions': ['each.test'] } ]
-    ```
-
   - ```javascript
     '@typescript-eslint/explicit-function-return-type': 'off'
     ```
