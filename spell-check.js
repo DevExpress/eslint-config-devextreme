@@ -72,6 +72,7 @@ module.exports = {
                 'semver',     // The semantic versioner for npm
                 'sinon',      // JS library
                 'stderr',     // Nodejs subprocess property
+                'stdout',     // Nodejs subprocess property
                 'tspan',      // SVG element
                 'tspans',
                 'uglify',     // UglifyJS
