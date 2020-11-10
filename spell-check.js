@@ -54,6 +54,7 @@ module.exports = {
                 'iphone',
                 'linejoin',   // SVG 'stroke-linejoin'
                 'linux',
+                'lstat',
                 'ltr',        // Left-to-Right
                 'mdx',        // OLAP Multi-dimensional expressions
                 'mercator',   // Map term
@@ -67,12 +68,14 @@ module.exports = {
                 'odata',      // OData
                 'readonly',
                 'rebase',     // clean-css option
+                'rmdir',
                 'rtl',        // Right-to-Left
                 'scss',
                 'semver',     // The semantic versioner for npm
                 'sinon',      // JS library
                 'stderr',     // Nodejs subprocess property
                 'stdout',     // Nodejs subprocess property
+                'symlink',
                 'tspan',      // SVG element
                 'tspans',
                 'uglify',     // UglifyJS
@@ -278,6 +281,7 @@ module.exports = {
                 'navbar',
                 'noop',
                 'normalizer',
+                'nuget',
                 'num',
                 'observables',
                 'overline',
@@ -424,6 +428,7 @@ module.exports = {
                 'vert',
                 'viewport',
                 'vml',
+                'vue',
                 'waypoint',
                 'waypoints',
                 'whitelist',
