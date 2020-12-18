@@ -72,6 +72,7 @@ module.exports = {
                 'rtl',        // Right-to-Left
                 'scss',
                 'semver',     // The semantic versioner for npm
+                'sep',        // Nodejs path.sep
                 'sinon',      // JS library
                 'stderr',     // Nodejs subprocess property
                 'stdout',     // Nodejs subprocess property
