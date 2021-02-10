@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-devextreme",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "description": "ESLint Configurations for the DevExtreme Source Code",
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.15.0",
-    "eslint": "^6.8.0",
+    "eslint": "^6.0.0 || ^7.0.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-airbnb-typescript": "^7.2.1",
     "eslint-plugin-import": "^2.20.2",
