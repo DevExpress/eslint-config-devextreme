@@ -20,6 +20,9 @@ module.exports = {
         'no-param-reassign': ['error', { 'props': false }],
 
         // Allow `await` inside of loops. This is a common case for TestCafe tests
-        'no-await-in-loop': 'off'
+        'no-await-in-loop': 'off',
+        
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/no-explicit-any': 'off'
     }
 };
