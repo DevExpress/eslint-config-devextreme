@@ -283,6 +283,7 @@ module.exports = {
                 'noop',
                 'normalizer',
                 'nuget',
+                'nullable',
                 'num',
                 'observables',
                 'overline',
