@@ -67,6 +67,7 @@ module.exports = {
                 'msie',
                 'odata',      // OData
                 'readonly',
+                'realpath',   // Nodejs realpathSync method
                 'rebase',     // clean-css option
                 'rmdir',
                 'rtl',        // Right-to-Left
