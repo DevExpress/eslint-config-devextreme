@@ -77,6 +77,7 @@ module.exports = {
                 'stderr',     // Nodejs subprocess property
                 'stdout',     // Nodejs subprocess property
                 'symlink',
+                'tsconfig',   // ts-jest option
                 'tspan',      // SVG element
                 'tspans',
                 'uglify',     // UglifyJS
