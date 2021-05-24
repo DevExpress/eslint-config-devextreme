@@ -65,10 +65,6 @@ Lists words that the spell check should ignore.
     'extends': ['devextreme/renovation-declarations']
     ```
 
-- **Extended configurations**
-  - [`devextreme/typescript`](#typescript)
-  - [`devextreme/spell-check`](#spell-check)
-
 - **Overrides**
 
   - Allow devDependencies to be imported when in development mode:
@@ -103,10 +99,6 @@ Lists words that the spell check should ignore.
     ```javascript
     'extends': ['devextreme/jest']
     ```
-
-- **Extended configurations**
-  - [`devextreme/typescript`](#typescript)
-  - [`devextreme/spell-check`](#spell-check)
 
 - **Environment**
   - `node` (Node.js global variables and scope)
@@ -163,9 +155,6 @@ Lists words that the spell check should ignore.
     'extends': ['devextreme/qunit']
     ```
 
-- **Extended configurations**
-  - [`devextreme/spell-check`](#spell-check)
-
 - **Environment**
   - `qunit` (QUnit global variables)
   - `browser` (Browser global variables)
@@ -196,10 +185,6 @@ Lists words that the spell check should ignore.
     ```javascript
     'extends': ['devextreme/testcafe']
     ```
-
-- **Extended configurations**
-  - [`devextreme/typescript`](#typescript)
-  - [`devextreme/spell-check`](#spell-check)
 
 - **Overrides**
 
