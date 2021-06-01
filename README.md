@@ -206,6 +206,18 @@ Lists words that the spell check should ignore.
     'no-await-in-loop': 'off'
     ```
 
+  - ```javascript
+    '@typescript-eslint/no-explicit-any': 'off'
+    ```
+
+  - ```javascript
+    '@typescript-eslint/explicit-function-return-type': 'off'
+    ```
+
+  - ```javascript
+    '@typescript-eslint/promise-function-async': 'off'
+    ```
+
 - **Environment**
   - `node` (Node.js global variables and scope)
   - `browser` (Browser global variables)
