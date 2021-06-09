@@ -146,6 +146,10 @@ Lists words that the spell check should ignore.
     '@typescript-eslint/no-explicit-any': 'off'
     ```
 
+  - ```javascript
+    '@typescript-eslint/no-magic-numbers': 'off'
+    ``` 
+
 ## QUnit Tests
 
 - **Usage**
@@ -217,6 +221,10 @@ Lists words that the spell check should ignore.
   - ```javascript
     '@typescript-eslint/promise-function-async': 'off'
     ```
+
+  - ```javascript
+    '@typescript-eslint/no-magic-numbers': 'off'
+    ``` 
 
 - **Environment**
   - `node` (Node.js global variables and scope)
