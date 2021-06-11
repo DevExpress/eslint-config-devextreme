@@ -261,7 +261,6 @@ module.exports = {
                 'iso',
                 'iter',
                 'jsonp',
-                'jszip',
                 'keydown',
                 'len',
                 'lng',
