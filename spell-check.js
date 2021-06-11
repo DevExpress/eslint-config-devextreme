@@ -69,6 +69,7 @@ module.exports = {
                 'readonly',
                 'rebase',     // clean-css option
                 'rmdir',
+                'rollup',
                 'rtl',        // Right-to-Left
                 'scss',
                 'semver',     // The semantic versioner for npm
