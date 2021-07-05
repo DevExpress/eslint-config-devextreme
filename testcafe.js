@@ -22,5 +22,6 @@ module.exports = {
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/promise-function-async': 'off',
         '@typescript-eslint/no-magic-numbers': 'off',
+        '@typescript-eslint/no-unsafe-return': 'off',
     }
 };
