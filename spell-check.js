@@ -413,6 +413,7 @@ module.exports = {
                 'unmerged',
                 'unmocked',
                 'unmount',
+                'unobserve', // ResizeObserver API
                 'unproject',
                 'unregister',
                 'unselect',
