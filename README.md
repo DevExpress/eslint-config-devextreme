@@ -154,6 +154,10 @@ Lists words that the spell check should ignore.
     '@typescript-eslint/no-unsafe-return': 'off'
     ```
 
+  - ```javascript
+    '@typescript-eslint/no-unsafe-member-access': 'off'
+    ```
+
 ## QUnit Tests
 
 - **Usage**
@@ -232,6 +236,10 @@ Lists words that the spell check should ignore.
 
   - ```javascript
     '@typescript-eslint/no-unsafe-return': 'off'
+    ```
+
+  - ```javascript
+    '@typescript-eslint/no-unsafe-member-access': 'off'
     ```
 
 - **Environment**
