@@ -448,7 +448,33 @@ module.exports = {
                 'rrule',
                 'wkst',
                 'eql', // TestCafe
-                'dxr' // Renovated components prefix (dxrButton for example) 
+                'dxr', // Renovated components prefix (dxrButton for example)
+                'areapolarseries', // .d.ts in DevExtreme/js/
+                'Areapolarseries',
+                'barpolarseries',
+                'Barpolarseries',
+                'fullstackedarea',
+                'fullstackedbar',
+                'fullstackedline',
+                'fullstackedspline',
+                'fullstackedsplinearea',
+                'linepolarseries',
+                'Linepolarseries',
+                'rangearea',
+                'rangebar',
+                'scatterpolarseries',
+                'splinearea',
+                'stackedarea',
+                'stackedbar',
+                'stackedbarpolarseries',
+                'Stackedbarpolarseries',
+                'stackedline',
+                'stackedspline',
+                'stackedsplinearea',
+                'steparea',
+                'stepline',
+                'unassign',
+                'Unassigning'
             ]
         }]
     }
