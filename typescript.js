@@ -8,8 +8,15 @@ module.exports = {
     ],
     rules: {
         'import/prefer-default-export': 'off',
-        "import/named": 'error',
-        "import/default": 'error',
-        "import/no-duplicates": 'error'
+        'import/named': 'error',
+        'import/default': 'error',
+        'import/no-duplicates': 'error',
+        'no-restricted-globals': [
+            'error',
+            {
+                'name': 'window',
+                'message': 'Use the getWindow method instead.'
+            }
+        ],
     }
 };
