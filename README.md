@@ -158,6 +158,10 @@ Lists words that the spell check should ignore.
     '@typescript-eslint/no-unsafe-member-access': 'off'
     ```
 
+  - ```javascript
+    'no-restricted-globals': 'off'
+    ```
+
 ## QUnit Tests
 
 - **Usage**
@@ -240,6 +244,10 @@ Lists words that the spell check should ignore.
 
   - ```javascript
     '@typescript-eslint/no-unsafe-member-access': 'off'
+    ```
+
+  - ```javascript
+    'no-restricted-globals': 'off'
     ```
 
 - **Environment**
