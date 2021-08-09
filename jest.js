@@ -29,6 +29,7 @@ module.exports = {
         '@typescript-eslint/no-magic-numbers': 'off',
         '@typescript-eslint/no-unsafe-return': 'off',
         '@typescript-eslint/no-unsafe-member-access': 'off',
+        '@typescript-eslint/no-non-null-assertion': 'off',
         'no-restricted-globals': 'off',
     }
 };
