@@ -73,6 +73,19 @@ Lists words that the spell check should ignore.
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }]
     ```
 
+  - Allow usage of 'non-null-assertion' for the declaration's ref objects:
+
+    ```javascript
+    'rulesdir/no-non-null-assertion': 'error'
+    '@typescript-eslint/no-non-null-assertion': 'off'
+    ```
+
+  - Disallow usage of spread/rest operators in the JSX markup. Angular does not support these operators in templates:
+
+    ```javascript
+    'rulesdir/no-jsx-spreading': 'error'
+    ```
+
   - Allow two classes (component class and props class) in one file:
   
     ```javascript
