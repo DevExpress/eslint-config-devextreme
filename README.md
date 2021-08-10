@@ -73,7 +73,7 @@ Lists words that the spell check should ignore.
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }]
     ```
 
-  - Allow 'non-null-assertion' using for the declaration's ref objects:
+  - Allow usage of 'non-null-assertion' for the declaration's ref objects:
 
     ```javascript
     'rulesdir/no-non-null-assertion': 'error'
