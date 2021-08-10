@@ -9,7 +9,7 @@ module.exports = {
     ],
 
     rules: {
-        // Allow 'non-null-assertion' using for the declaration's ref objects
+        // Allow usage of 'non-null-assertion' for the declaration's ref objects
         'rulesdir/no-non-null-assertion': 'error',
         '@typescript-eslint/no-non-null-assertion': 'off',
 
