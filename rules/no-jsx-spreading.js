@@ -8,7 +8,7 @@ module.exports = {
         },
 
         messages: {
-          noSpreading: 'Do not use `spread` and `rest` operators in the JSX markup. Extract this functionality to the component's getter.'
+          noSpreading: 'Do not use `spread` and `rest` operators in the JSX markup. Extract this functionality to the component\'s getter.'
         },
 
         schema: []
