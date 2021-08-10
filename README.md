@@ -80,7 +80,7 @@ Lists words that the spell check should ignore.
     '@typescript-eslint/no-non-null-assertion': 'off'
     ```
 
-  - Disallow using of spread/rest operators in the JSX markup. Angular does't support them in templates:
+  - Disallow usage of spread/rest operators in the JSX markup. Angular does not support these operators in templates:
 
     ```javascript
     'rulesdir/no-jsx-spreading': 'error'
