@@ -13,8 +13,8 @@ module.exports = {
         'rulesdir/no-non-null-assertion': 'error',
         '@typescript-eslint/no-non-null-assertion': 'off',
 
-        // Disallow using of spread/rest operators in the JSX markup. 
-        // Angular does't support them in templates
+        // Disallow usage of spread/rest operators in the JSX markup.
+        // Angular does not support these operators in templates
         'rulesdir/no-jsx-spreading': 'error',
 
         // Allow devDependencies to be imported when in development mode
