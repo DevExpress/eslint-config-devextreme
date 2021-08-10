@@ -16,7 +16,7 @@ module.exports = {
 
       create(context) {
         const isJSX = (node) => {
-            const type = node.name?.type;
+            const type = node.name ? node.name.type : undefined;
 
             if (type === 'JSXIdentifier' || type === 'JSXMemberExpression')
                 return true;
