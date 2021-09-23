@@ -321,6 +321,7 @@ module.exports = {
                 'preload',
                 'prepend',
                 'prerender',
+                'prerendered', // prerenderedRowChunkSize option name
                 'prev',
                 'proj',
                 'proto',
