@@ -11,7 +11,7 @@
     "name": "Developer Express Inc."
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
     "eslint": "^7.3.1",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
@@ -21,7 +21,7 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-qunit": "^4.0.0",
     "eslint-plugin-rulesdir": "^0.2.0",
-    "eslint-plugin-spellcheck": "^0.0.14"
+    "eslint-plugin-spellcheck": "^0.0.19"
   },
   "main": "./index.js",
   "keywords": [
