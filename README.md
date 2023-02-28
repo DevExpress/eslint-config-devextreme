@@ -28,7 +28,8 @@ This repository collects ESLint configurations that enforce the code style used 
   
 - **Extended plugins and configurations**
   - [`plugin:@typescript-eslint/recommended`](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#recommended-configs)
-  - [`airbnb-typescript`](https://github.com/iamturns/eslint-config-airbnb-typescript)
+  - [`airbnb-base`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
+  - [`airbnb-typescript/base`](https://github.com/iamturns/eslint-config-airbnb-typescript)
 
 ## JavaScript
 
@@ -65,45 +66,6 @@ Lists words that the spell check should ignore.
     'extends': ['devextreme/renovation-declarations']
     ```
 
-- **Overrides**
-
-  - Allow devDependencies to be imported when in development mode:
-
-    ```javascript
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }]
-    ```
-
-  - Allow usage of 'non-null-assertion' for the declaration's ref objects:
-
-    ```javascript
-    'rulesdir/no-non-null-assertion': 'error'
-    '@typescript-eslint/no-non-null-assertion': 'off'
-    ```
-
-  - Disallow usage of spread/rest operators in the JSX markup. Angular does not support these operators in templates:
-
-    ```javascript
-    'rulesdir/no-jsx-spreading': 'error'
-    ```
-
-  - Allow two classes (component class and props class) in one file:
-  
-    ```javascript
-    'max-classes-per-file': ['error', 2]
-    ```
-
-  - Disable React dependency validation. Declarations do not require this dependency, since they are not proper React components.
-  
-    ```javascript
-    'react/react-in-jsx-scope': ['off']
-    ```
-
-  - Allow function calls in the ternary operator.
-  
-    ```javascript
-     '@typescript-eslint/no-unused-expressions': ['error', { 'allowShortCircuit': true, ;'allowTernary': true }]
-    ```
-
 ## Jest Tests
 
 - **Usage**
@@ -124,56 +86,6 @@ Lists words that the spell check should ignore.
 - **Extended plugins**
   - [`plugin:jest/recommended`](https://github.com/jest-community/eslint-plugin-jest#recommended)
   - `plugin:jest-formatting/recommended`
-  
-- **Overrides**
-
-  - Allow the use of devDependencies in the tests:
-  
-    ```javascript
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }]
-    ```
-
-  - Disable props validation for temporary JSX components created during the tests:
-  
-    ```javascript
-    'react/prop-types': ['error', { skipUndeclared: true }]
-    ```
-
-  - Allow the use of props spreading in the temporary JSX components:
-  
-    ```javascript
-    'react/jsx-props-no-spreading': 'off'
-    ```
-
-  - Allow defining the widget's `accessKey` attribute:
-  
-    ```javascript
-    'jsx-a11y/no-access-key': 'off'
-    ```
-
-  - ```javascript
-    '@typescript-eslint/explicit-function-return-type': 'off'
-    ```
-
-  - ```javascript
-    '@typescript-eslint/no-explicit-any': 'off'
-    ```
-
-  - ```javascript
-    '@typescript-eslint/no-magic-numbers': 'off'
-    ```
-
-  - ```javascript
-    '@typescript-eslint/no-unsafe-return': 'off'
-    ```
-
-  - ```javascript
-    '@typescript-eslint/no-unsafe-member-access': 'off'
-    ```
-
-  - ```javascript
-    'no-restricted-globals': 'off'
-    ```
 
 ## QUnit Tests
 
@@ -193,18 +105,6 @@ Lists words that the spell check should ignore.
 
 - **Extended plugins**
   - [`plugin:qunit/recommended`](https://github.com/platinumazure/eslint-plugin-qunit#recommended)
-  - [`plugin:qunit/two`](https://github.com/platinumazure/eslint-plugin-qunit#two)
-  
-- **Overrides**
-  
-    ```javascript
-    'qunit/no-arrow-tests': 'error',
-    'qunit/no-commented-tests': 'error',
-    'qunit/no-identical-names': 'warn',
-    'qunit/no-global-module-test': 'off',
-    'qunit/require-expect': 'off',
-    'qunit/resolve-async': 'off'
-    ```
 
 ## TestCafe Tests
 
@@ -215,54 +115,6 @@ Lists words that the spell check should ignore.
     'extends': ['devextreme/testcafe']
     ```
 
-- **Overrides**
-
-  - Allow using any types of dependencies:
-
-    ```javascript
-    'import/no-extraneous-dependencies': 'off'
-    ```
-
-  - Allow modifying parameters in event handlers to test these use cases:
-  
-    ```javascript
-    'no-param-reassign': ['error', { 'props': false }],
-    ```
-
-  - Allow `await` inside of loops. This is a common case for TestCafe tests.
-  
-    ```javascript
-    'no-await-in-loop': 'off'
-    ```
-
-  - ```javascript
-    '@typescript-eslint/no-explicit-any': 'off'
-    ```
-
-  - ```javascript
-    '@typescript-eslint/explicit-function-return-type': 'off'
-    ```
-
-  - ```javascript
-    '@typescript-eslint/promise-function-async': 'off'
-    ```
-
-  - ```javascript
-    '@typescript-eslint/no-magic-numbers': 'off'
-    ```
-
-  - ```javascript
-    '@typescript-eslint/no-unsafe-return': 'off'
-    ```
-
-  - ```javascript
-    '@typescript-eslint/no-unsafe-member-access': 'off'
-    ```
-
-  - ```javascript
-    'no-restricted-globals': 'off'
-    ```
-
 - **Environment**
   - `node` (Node.js global variables and scope)
   - `browser` (Browser global variables)
@@ -271,4 +123,3 @@ Lists words that the spell check should ignore.
 - **Additional global variables**
   - `test`
   - `fixture`  
-  

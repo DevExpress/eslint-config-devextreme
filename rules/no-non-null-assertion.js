@@ -6,11 +6,11 @@ module.exports = {
     name: 'no-non-null-assertion',
     meta: {
         type: 'problem',
+        hasSuggestions: true,
         docs: {
             description: 'Disallows non-null assertions using the `!` postfix operator',
             category: 'Stylistic Issues',
             recommended: 'warn',
-            suggestion: true,
         },
         messages: {
             noNonNull: 'Forbidden non-null assertion.',
