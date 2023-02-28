@@ -4,6 +4,12 @@ module.exports = {
         browser: true,
         jquery: true
     },
+    plugins: [
+        'testcafe',
+    ],
+    extends: [
+        'plugin:testcafe/recommended',
+    ],
     globals: {
         test: true,
         fixture: true
@@ -17,7 +23,7 @@ module.exports = {
 
         // Allow `await` inside of loops. This is a common case for TestCafe tests
         'no-await-in-loop': 'off',
-        
+
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/promise-function-async': 'off',
@@ -25,6 +31,7 @@ module.exports = {
         '@typescript-eslint/no-unsafe-return': 'off',
         '@typescript-eslint/no-unsafe-member-access': 'off',
         '@typescript-eslint/no-non-null-assertion': 'off',
+        '@typescript-eslint/init-declarations': 'off',
         'no-restricted-globals': 'off',
     }
 };

@@ -8,7 +8,6 @@ module.exports = {
     ],
     extends: [
         'plugin:qunit/recommended',
-        'plugin:qunit/two'
     ],
     globals: {
         define: true,
