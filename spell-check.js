@@ -28,7 +28,7 @@ module.exports = {
                 'xs', // extra small
                 'xy', // XY-diagram
                 'vm', // view-model
-    
+
                 'cjs',
                 'esm',
                 'amd',          // AMD modules
@@ -87,11 +87,11 @@ module.exports = {
                 'webpack',
                 'xmla',       // XML for Analysis
                 'ldml',       // LOCALE DATA MARKUP LANGUAGE
-    
+
                 'png',
                 'jpg',
                 'svg',
-    
+
                 'API',
                 'accessor',
                 'accessors',
@@ -271,6 +271,7 @@ module.exports = {
                 'iter',
                 'jsonp',
                 'keydown',
+                'langParams', // DataSource option
                 'len',
                 'linepolarseries',
                 'lng',
