@@ -7,7 +7,10 @@ module.exports = {
             'strings': false,
             'identifiers': true,
             'templates': false,
-            'skipIfMatch': [ '^\\$?..$' ],
+            'skipIfMatch': [
+                '^\\$?..$',
+                'langParams', // DataSource option
+            ],
             'skipWords': [
                 'dx', // DevExpress
                 'el', // Element
@@ -166,6 +169,7 @@ module.exports = {
                 'cpus',
                 'crit',
                 'crosshair',
+                'csp',
                 'ctor',
                 'ctors',
                 'ctrl',
@@ -271,7 +275,6 @@ module.exports = {
                 'iter',
                 'jsonp',
                 'keydown',
-                'langParams', // DataSource option
                 'len',
                 'linepolarseries',
                 'lng',
