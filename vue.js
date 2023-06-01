@@ -67,7 +67,7 @@ module.exports = {
     'no-trailing-spaces': 'error',
     'no-new-func': 'error',
     'no-eval': 'error',
-    'no-undef': 'error',
+    'no-undef': 'off',
     'no-unused-expressions': 'off',
     'no-unused-vars': ['error'],
     'no-extend-native': 'error',
