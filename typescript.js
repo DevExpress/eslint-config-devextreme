@@ -19,6 +19,7 @@ module.exports = {
                 'message': 'Use the getWindow method instead.'
             }
         ],
+        'no-undef': 'off',
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/array-type': 'error',
         '@typescript-eslint/await-thenable': 'error',
