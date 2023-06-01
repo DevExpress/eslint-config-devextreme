@@ -56,6 +56,6 @@ module.exports = {
     '@typescript-eslint/no-unused-expressions': 0,
     '@typescript-eslint/no-useless-constructor': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0, // was warn
-    '@typescript-eslint/no-extraneous-class': 1,
+    '@typescript-eslint/no-extraneous-class': 0,
   },
 };
