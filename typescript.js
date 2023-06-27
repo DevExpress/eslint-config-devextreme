@@ -58,7 +58,6 @@ module.exports = {
         '@typescript-eslint/no-misused-new': 'error',
         '@typescript-eslint/no-namespace': 'error',
         '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
-        '@typescript-eslint/no-parameter-properties': 'error',
         '@typescript-eslint/no-require-imports': 'error',
         '@typescript-eslint/no-this-alias': 'error',
         '@typescript-eslint/no-throw-literal': 'error',
