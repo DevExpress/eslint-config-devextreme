@@ -612,7 +612,9 @@ module.exports = {
                 'Kosovo',
                 'Macau',
                 'Niue',
-                'Palau'
+                'Palau',
+                // JS build-in names
+                'subtree', // mutation observer option
             ]
         }]
     }
