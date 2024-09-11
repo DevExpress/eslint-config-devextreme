@@ -112,12 +112,7 @@ module.exports = {
                 'ignoreStringArrays': true
             }
         ],
-        '@typescript-eslint/restrict-plus-operands': [
-            'error',
-            {
-                'checkCompoundAssignments': true
-            }
-        ],
+        '@typescript-eslint/restrict-plus-operands': 'error',
         '@typescript-eslint/require-await': 'error',
         '@typescript-eslint/no-misused-promises': 'error',
         '@typescript-eslint/no-floating-promises': 'error',
