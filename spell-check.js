@@ -615,6 +615,7 @@ module.exports = {
                 'Palau',
                 // JS build-in names
                 'subtree', // mutation observer option
+                'ai', // artificial intelligence
             ]
         }]
     }
