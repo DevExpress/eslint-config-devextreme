@@ -1,5 +1,7 @@
-module.exports = {
-    plugins: [ 'spellcheck' ],
+import spellcheck from 'eslint-plugin-spellcheck';
+
+export default [{
+    plugins: { spellcheck },
     rules: {
         'spellcheck/spell-checker': [ 'error', {
             'lang': 'en_US',
@@ -619,4 +621,4 @@ module.exports = {
             ]
         }]
     }
-};
+}];

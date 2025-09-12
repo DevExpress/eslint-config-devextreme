@@ -1,20 +1,16 @@
-module.exports = {
-    env: {
-        node: true,
-        browser: true,
-        jquery: true
-    },
-    plugins: [
-        'testcafe',
-    ],
-    extends: [
-        'plugin:testcafe/recommended',
-    ],
-    globals: {
-        test: true,
-        fixture: true
-    },
-    rules: {
+import testcafePlugin from 'eslint-plugin-testcafe';
+
+export default [
+    testcafePlugin.configs.recommended,
+    {
+        plugins: { testcafe: testcafePlugin },
+        languageOptions: {
+            globals: {
+                test: 'readonly',
+                fixture: 'readonly',
+            },
+        },
+        rules: {
         // Allow using any types of dependencies
         'import/no-extraneous-dependencies': 'off',
 
@@ -33,5 +29,6 @@ module.exports = {
         '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/init-declarations': 'off',
         'no-restricted-globals': 'off',
+        }
     }
-};
+];

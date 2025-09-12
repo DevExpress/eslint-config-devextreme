@@ -1,17 +1,21 @@
 /* eslint-env node */
 /* eslint-disable quote-props */
 
-module.exports = {
-  plugins: [
-    'no-only-tests',
-    'react-perf'
-  ],
-  extends: [
-    'eslint:recommended',
-    'devextreme/typescript',
-    'plugin:react/recommended'
-  ],
-  rules: {
+import reactPlugin from 'eslint-plugin-react';
+import reactPerf from 'eslint-plugin-react-perf';
+import noOnlyTests from 'eslint-plugin-no-only-tests';
+import typescriptConfig from './typescript.js';
+
+export default [
+  ...typescriptConfig,
+  reactPlugin.configs.recommended,
+  {
+    plugins: {
+      react: reactPlugin,
+      'react-perf': reactPerf,
+      'no-only-tests': noOnlyTests
+    },
+    rules: {
     'class-methods-use-this': 0, // TODO warn (was error)
     'func-names': 0, // TODO warn (was warn) >500
     'import/extensions': 0,
@@ -146,5 +150,6 @@ module.exports = {
         nativeAllowList: 'all',
       },
     ],
-  },
-};
+  }
+  }
+];

@@ -1,15 +1,17 @@
 /* eslint-env node */
 /* eslint-disable quote-props */
 
-module.exports = {
-  plugins: [
-    'no-only-tests',
-  ],
-  extends: [
-    'eslint:recommended',
-    'plugin:vue/recommended',
-  ],
-  rules: {
+import vuePlugin from 'eslint-plugin-vue';
+import noOnlyTests from 'eslint-plugin-no-only-tests';
+
+export default [
+  vuePlugin.configs.recommended,
+  {
+    plugins: {
+      vue: vuePlugin,
+      'no-only-tests': noOnlyTests
+    },
+    rules: {
     'class-methods-use-this': 0, // TODO warn (was error)
     'func-names': 0, // TODO warn (was warn) >500
     'import/extensions': 0,
@@ -124,5 +126,6 @@ module.exports = {
       'singleline': 'never',
       multiline: 'always',
     }],
-  },
-};
+  }
+  }
+];
