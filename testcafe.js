@@ -1,7 +1,8 @@
 import testcafePlugin from 'eslint-plugin-testcafe';
+import { fixLegacyConfigs } from "./utils/index.js";
 
 export default [
-    testcafePlugin.configs.recommended,
+    ...fixLegacyConfigs([testcafePlugin.configs.recommended]),
     {
         plugins: { testcafe: testcafePlugin },
         languageOptions: {
@@ -24,7 +25,7 @@ export default [
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/promise-function-async': 'off',
         '@typescript-eslint/no-magic-numbers': 'off',
-        '@typescript-eslint/no-unsafe-return': 'off',
+        // '@typescript-eslint/no-unsafe-return': 'off',
         '@typescript-eslint/no-unsafe-member-access': 'off',
         '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/init-declarations': 'off',
