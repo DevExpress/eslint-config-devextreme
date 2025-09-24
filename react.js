@@ -5,15 +5,18 @@ import reactPlugin from 'eslint-plugin-react';
 import reactPerf from 'eslint-plugin-react-perf';
 import noOnlyTests from 'eslint-plugin-no-only-tests';
 import typescriptConfig from './typescript.js';
+import jsxA11y from 'eslint-plugin-jsx-a11y';
 
 export default [
   ...typescriptConfig,
-  reactPlugin.configs.recommended,
+  jsxA11y.flatConfigs.recommended,
+  reactPlugin.configs.flat.recommended,
   {
     plugins: {
       react: reactPlugin,
       'react-perf': reactPerf,
-      'no-only-tests': noOnlyTests
+      'no-only-tests': noOnlyTests,
+      'jsx-a11y': jsxA11y,
     },
     rules: {
     'class-methods-use-this': 0, // TODO warn (was error)

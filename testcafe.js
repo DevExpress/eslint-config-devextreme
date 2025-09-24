@@ -1,10 +1,6 @@
-import testcafePlugin from 'eslint-plugin-testcafe';
-import { fixLegacyConfigs } from "./utils/index.js";
 
 export default [
-    ...fixLegacyConfigs([testcafePlugin.configs.recommended]),
     {
-        plugins: { testcafe: testcafePlugin },
         languageOptions: {
             globals: {
                 test: 'readonly',

@@ -1,8 +1,10 @@
 import tseslint from "@typescript-eslint/eslint-plugin";
+import importPlugin from "eslint-plugin-import";
 import { FlatCompat } from "@eslint/eslintrc";
 import { fileURLToPath } from "url";
 import path from "path";
 import { fixLegacyConfigs } from "./utils/index.js";
+import stylistic from '@stylistic/eslint-plugin'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -10,12 +12,14 @@ const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({ baseDirectory: __dirname });
 
 export default [
-    ...fixLegacyConfigs([tseslint.configs.recommended]),
+    ...tseslint.configs['flat/recommended'],
     ...fixLegacyConfigs(compat.extends("eslint-config-airbnb-base")),
     ...fixLegacyConfigs(compat.extends("eslint-config-airbnb-typescript")),
     {
         plugins: { 
-            '@typescript-eslint': tseslint 
+            '@typescript-eslint': tseslint,
+            'import': importPlugin,
+            '@stylistic': stylistic
         },
         languageOptions: {
             parserOptions: {
@@ -117,6 +121,8 @@ export default [
             '@typescript-eslint/prefer-includes': 'error',
             '@typescript-eslint/no-unnecessary-type-assertion': 'error',
             '@typescript-eslint/prefer-nullish-coalescing': 'error',
+            "func-call-spacing": "error",
+            "no-throw-literal": "error",
         }
     }
 ];

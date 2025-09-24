@@ -1,27 +1,9 @@
 import { rules as stylisticRules } from '@eslint-stylistic/metadata';
 
 const REMOVED_RULES = [
-    'react/jsx-filename-extension',
-    '@typescript-eslint/no-throw-literal',
-    '@typescript-eslint/ban-types',
-    '@typescript-eslint/brace-style',
-    '@typescript-eslint/comma-dangle',
-    '@typescript-eslint/comma-spacing',
     '@typescript-eslint/func-call-spacing',
-    '@typescript-eslint/indent',
-    '@typescript-eslint/keyword-spacing',
-    '@typescript-eslint/lines-between-class-members',
-    '@typescript-eslint/no-extra-semi',
-    '@typescript-eslint/space-before-blocks',
-    '@typescript-eslint/quotes',
-    '@typescript-eslint/semi',
-    '@typescript-eslint/space-before-function-paren',
-    '@typescript-eslint/space-infix-ops',
-    '@typescript-eslint/object-curly-spacing',
-    '@typescript-eslint/dot-notation',
-    '@typescript-eslint/no-implied-eval',
-    '@typescript-eslint/require-await',
-    '@typescript-eslint/return-await',
+    '@typescript-eslint/no-throw-literal',
+    'react/jsx-filename-extension',
 ];
 
 const changeRules = (rules) => ({
@@ -42,7 +24,7 @@ const changeRules = (rules) => ({
 });
 
 export const fixLegacyConfigs = (configs) => {
-    return configs.flatMap((config) => {
+    return configs.map((config) => {
         let newConfig = config;
 
         // move globals to languageOptions.globals

@@ -1,9 +1,8 @@
-import qunitPlugin from 'eslint-plugin-qunit';
-
+import eslintPluginQunitRecommended from 'eslint-plugin-qunit/configs/recommended';
 export default [
-    qunitPlugin.configs.recommended,
+    eslintPluginQunitRecommended,
     {
-        plugins: { qunit: qunitPlugin },
+        plugins: { qunit: eslintPluginQunitRecommended.plugins.qunit },
         languageOptions: {
             globals: {
                 define: 'readonly',
