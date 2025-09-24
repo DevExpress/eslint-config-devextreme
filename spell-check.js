@@ -33,7 +33,6 @@ export default [{
                 'xs', // extra small
                 'xy', // XY-diagram
                 'vm', // view-model
-
                 'cjs',
                 'esm',
                 'amd',          // AMD modules

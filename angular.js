@@ -2,10 +2,8 @@
 /* eslint-disable quote-props */
 
 import noOnlyTests from 'eslint-plugin-no-only-tests';
-import typescriptConfig from './typescript.js';
 
 export default [
-  ...typescriptConfig,
   {
     plugins: { 'no-only-tests': noOnlyTests },
     rules: {

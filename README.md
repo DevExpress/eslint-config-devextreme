@@ -84,7 +84,14 @@ Lists words that the spell check should ignore.
     ```javascript
     import { jest } from 'eslint-config-devextreme';
     export default [
-      ...jest,
+        ...jest.map(config => ({
+          ...config,
+          settings: {
+            jest: {
+              version: 'your jest version'
+            }
+          }
+        })),
     ]
     ```
   

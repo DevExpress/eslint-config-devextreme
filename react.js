@@ -4,11 +4,9 @@
 import reactPlugin from 'eslint-plugin-react';
 import reactPerf from 'eslint-plugin-react-perf';
 import noOnlyTests from 'eslint-plugin-no-only-tests';
-import typescriptConfig from './typescript.js';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 
 export default [
-  ...typescriptConfig,
   jsxA11y.flatConfigs.recommended,
   reactPlugin.configs.flat.recommended,
   {

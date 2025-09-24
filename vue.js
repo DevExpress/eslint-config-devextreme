@@ -1,16 +1,16 @@
 /* eslint-env node */
 /* eslint-disable quote-props */
 
-import vuePlugin from 'eslint-plugin-vue';
+import pluginVue from 'eslint-plugin-vue';
 import noOnlyTests from 'eslint-plugin-no-only-tests';
 import tseslint from "@typescript-eslint/eslint-plugin";
 
 export default [
-  vuePlugin.configs.recommended,
+  ...pluginVue.configs['flat/recommended'],
   {
     plugins: {
       '@typescript-eslint': tseslint,
-      vue: vuePlugin,
+      vue: pluginVue,
       'no-only-tests': noOnlyTests
     },
     rules: {

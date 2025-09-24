@@ -2,10 +2,8 @@
 /* eslint-disable quote-props */
 
 import noOnlyTests from 'eslint-plugin-no-only-tests';
-import javascriptConfig from './javascript.js';
 
 export default [
-  ...javascriptConfig,
   {
     plugins: { 'no-only-tests': noOnlyTests },
     rules: {
