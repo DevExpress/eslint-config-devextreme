@@ -16,7 +16,6 @@ export default [
       react: reactPlugin,
       'react-perf': reactPerf,
       'no-only-tests': noOnlyTests,
-      'jsx-a11y': jsxA11y,
     },
     rules: {
     'class-methods-use-this': 0, // TODO warn (was error)
