@@ -3,7 +3,6 @@ import { rules as stylisticRules } from '@eslint-stylistic/metadata';
 const REMOVED_RULES = [
     '@typescript-eslint/func-call-spacing',
     '@typescript-eslint/no-throw-literal',
-    'react/jsx-filename-extension',
 ];
 
 const changeRules = (rules) => ({
@@ -24,30 +23,8 @@ const changeRules = (rules) => ({
 });
 
 export const fixLegacyConfigs = (configs) => {
-    return configs.map((config) => {
-        let newConfig = config;
-
-        // move globals to languageOptions.globals
-        if (config && config.globals) {
-            const { globals, ...rest } = config;
-            newConfig = {
-                ...rest,
-                languageOptions: {
-                    globals: { ...globals },
-                },
-            };
-        }
-
-        // change rules
-        if (config && config.rules) {
-            newConfig.rules = changeRules(config.rules);
-        }
-
-        // remove extends
-        if (config && config.extends) {
-            delete newConfig.extends;
-        }
-
-        return newConfig;
-    });
+    return configs.map((config) => ({
+        ...config,
+        rules: changeRules(config.rules || {}),
+    }));
 };

@@ -4,7 +4,6 @@ import importPlugin from "eslint-plugin-import";
 
 export default [
     jestPlugin.configs['flat/recommended'],
-    jestFormatting.configs['flat/recommended'],
     {
         plugins: {
             jest: jestPlugin,
