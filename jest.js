@@ -5,6 +5,13 @@ import importPlugin from "eslint-plugin-import";
 export default [
     jestPlugin.configs['flat/recommended'],
     {
+        files: jestFormatting.configs.recommended.overrides[0].files,
+        rules: jestFormatting.configs.recommended.overrides[0].rules,
+        plugins: {
+            "jest-formatting": jestFormatting,
+        },
+    },
+    {
         plugins: {
             jest: jestPlugin,
             'jest-formatting': jestFormatting,
