@@ -36,7 +36,6 @@ This repository collects ESLint configurations that enforce the code style used 
 - **Required packages**
   - [@typescript-eslint](https://github.com/typescript-eslint/typescript-eslint)
   - [airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
-  - [airbnb-typescript/base](https://github.com/iamturns/eslint-config-airbnb-typescript)
   - [@stylistic/eslint-plugin](https://github.com/eslint-stylistic/eslint-stylistic)
   - [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import)
 
@@ -142,11 +141,19 @@ Lists words that the spell check should ignore.
     import { react } from 'eslint-config-devextreme';
     export default [
       ...react,
+      settings: {
+        react: {
+          version: 'detect',
+        },
+      },
     ]
     ``` 
 - **Required packages**
   - [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react)
   - [eslint-plugin-react-perf](http://github.com/cvazac/eslint-plugin-react-perf)
+  - [airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
+  - [airbnb-typescript/base](https://github.com/iamturns/eslint-config-airbnb-typescript)
+   - [@stylistic/eslint-plugin](https://github.com/eslint-stylistic/eslint-stylistic)
 
 ## Angular
 
