@@ -1,17 +1,33 @@
 /* eslint-env node */
 /* eslint-disable quote-props */
 
-module.exports = {
-  plugins: [
-    'no-only-tests',
-    'react-perf'
-  ],
-  extends: [
-    'eslint:recommended',
-    'devextreme/typescript',
-    'plugin:react/recommended'
-  ],
-  rules: {
+import reactPlugin from 'eslint-plugin-react';
+import reactPerf from 'eslint-plugin-react-perf';
+import noOnlyTests from 'eslint-plugin-no-only-tests';
+import jsxA11y from 'eslint-plugin-jsx-a11y';
+import { FlatCompat } from "@eslint/eslintrc";
+import { fileURLToPath } from "url";
+import path from "path";
+import { fixLegacyConfigs } from "./utils/index.js";
+import stylistic from '@stylistic/eslint-plugin'
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const compat = new FlatCompat({ baseDirectory: __dirname });
+
+export default [
+  ...fixLegacyConfigs(compat.extends("eslint-config-airbnb-base")),
+  ...fixLegacyConfigs(compat.extends("eslint-config-airbnb-typescript")),
+  jsxA11y.flatConfigs.recommended,
+  reactPlugin.configs.flat.recommended,
+  {
+    plugins: {
+      react: reactPlugin,
+      'react-perf': reactPerf,
+      'no-only-tests': noOnlyTests,
+      '@stylistic': stylistic
+    },
+    rules: {
     'class-methods-use-this': 0, // TODO warn (was error)
     'func-names': 0, // TODO warn (was warn) >500
     'import/extensions': 0,
@@ -146,5 +162,6 @@ module.exports = {
         nativeAllowList: 'all',
       },
     ],
-  },
-};
+  }
+  }
+];

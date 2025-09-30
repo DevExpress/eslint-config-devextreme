@@ -1,5 +1,7 @@
-module.exports = {
-    plugins: [ 'spellcheck' ],
+import spellcheck from 'eslint-plugin-spellcheck';
+
+export default [{
+    plugins: { spellcheck },
     rules: {
         'spellcheck/spell-checker': [ 'error', {
             'lang': 'en_US',
@@ -31,7 +33,6 @@ module.exports = {
                 'xs', // extra small
                 'xy', // XY-diagram
                 'vm', // view-model
-
                 'cjs',
                 'esm',
                 'amd',          // AMD modules
@@ -619,4 +620,4 @@ module.exports = {
             ]
         }]
     }
-};
+}];

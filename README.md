@@ -4,43 +4,58 @@ This repository collects ESLint configurations that enforce the code style used 
 
 > **Note**: Adding new configurations is possible but discouraged. Double-check that none of the existing configurations fits for your case before you add a new configuration.
 
+## Required packages
+- [eslint: 9.18.0](https://www.npmjs.com/package/eslint/v/9.18.0)
+- [@eslint/eslintrc: ^3.3.1](https://www.npmjs.com/package/@eslint/eslintrc)
+- [@eslint-stylistic/metadata: ^4.4.1](https://www.npmjs.com/package/@eslint-stylistic/metadata/v/4.4.1)
+
 ## List of Configurations
 
   1. [TypeScript](#typescript)
   2. [JavaScript](#javascript)
   3. [Spell Check](#spell-check)
-  4. [Renovation Declarations](#renovation-declarations)
-  5. [Jest Tests](#jest-tests)
-  6. [QUnit Tests](#qunit-tests)
-  7. [TestCafe Tests](#testcafe-tests)
+  4. [Jest Tests](#jest-tests)
+  5. [QUnit Tests](#qunit-tests)
+  6. [TestCafe Tests](#testcafe-tests)
+  7. [React](#react)
+  8. [Angular](#angular)
+  9. [Vue](#vue)
 
 ## TypeScript
 
 - **Usage**
-    Add the following line to your *.eslintrc* file:
+    Add the following line to your *eslint.config.mjs* file:
 
     ```javascript
-    'extends': ['devextreme/typescript']
+    import { typescript } from 'eslint-config-devextreme';
+    export default [
+      ...typescript,
+    ]
     ```
 
-- **Required plugins**
+- **Required packages**
   - [@typescript-eslint](https://github.com/typescript-eslint/typescript-eslint)
+  - [airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
+  - [@stylistic/eslint-plugin](https://github.com/eslint-stylistic/eslint-stylistic)
+  - [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import)
+
   
 - **Extended plugins and configurations**
-  - [`plugin:@typescript-eslint/recommended`](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#recommended-configs)
-  - [`airbnb-base`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
-  - [`airbnb-typescript/base`](https://github.com/iamturns/eslint-config-airbnb-typescript)
+  - [plugin:@typescript-eslint/recommended](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#recommended-configs)
 
 ## JavaScript
 
 - **Usage**
-    Add the following line to your *.eslintrc* file:
+    Add the following line to your *eslint.config.mjs* file:
 
     ```javascript
-    'extends': ['devextreme/javascript']
+    import { javascript } from 'eslint-config-devextreme';
+    export default [
+      ...javascript,
+    ]
     ```
   
-- **Extended plugins and configurations**
+- **Required packages**
   - [`airbnb-base`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
   
 ## Spell Check
@@ -48,78 +63,122 @@ This repository collects ESLint configurations that enforce the code style used 
 Lists words that the spell check should ignore.
 
 - **Usage**
-    Add the following line to your *.eslintrc* file:
+    Add the following line to your *eslint.config.mjs* file:
 
     ```javascript
-    "extends": ["devextreme/spell-check"]
+    import { spellCheck } from 'eslint-config-devextreme';
+    export default [
+      ...spellCheck,
+    ]
     ```
 
-- **Required plugins**
+- **Required packages**
   - [spellcheck](https://github.com/aotaduy/eslint-plugin-spellcheck)
-
-## Renovation Declarations
-
-- **Usage**
-    Add the following line to your *.eslintrc* file:
-
-    ```javascript
-    'extends': ['devextreme/renovation-declarations']
-    ```
 
 ## Jest Tests
 
 - **Usage**
-    Add the following line to your *.eslintrc* file:
+    Add the following line to your *eslint.config.mjs* file:
 
     ```javascript
-    'extends': ['devextreme/jest']
+    import { jest } from 'eslint-config-devextreme';
+    export default [
+        ...jest.map(config => ({
+          ...config,
+          settings: {
+            jest: {
+              version: 'your jest version'
+            }
+          }
+        })),
+    ]
     ```
-
-- **Environment**
-  - `node` (Node.js global variables and scope)
-  - `jest` (Jest global variables)
   
-- **Required plugins**
+- **Required packages**
   - [jest](https://github.com/jest-community/eslint-plugin-jest)
   - [jest-formatting](https://github.com/dangreenisrael/eslint-plugin-jest-formatting)
   
 - **Extended plugins**
-  - [`plugin:jest/recommended`](https://github.com/jest-community/eslint-plugin-jest#recommended)
-  - `plugin:jest-formatting/recommended`
+  - [`jestPlugin.configs['flat/recommended']`](https://github.com/jest-community/eslint-plugin-jest#recommended)
+  - `jestFormatting.configs['flat/recommended']`
 
 ## QUnit Tests
 
 - **Usage**
-    Add the following line to your *.eslintrc* file:
+    Add the following line to your *eslint.config.mjs* file:
 
     ```javascript
-    'extends': ['devextreme/qunit']
+    import { qunit } from 'eslint-config-devextreme';
+    export default [
+      ...qunit,
+    ]
     ```
-
-- **Environment**
-  - `qunit` (QUnit global variables)
-  - `browser` (Browser global variables)
   
-- **Required plugins**
+- **Required packages**
   - [qunit](https://github.com/platinumazure/eslint-plugin-qunit)
 
 - **Extended plugins**
-  - [`plugin:qunit/recommended`](https://github.com/platinumazure/eslint-plugin-qunit#recommended)
+  - [`eslintPluginQunitRecommended.plugins.qunit`](https://github.com/platinumazure/eslint-plugin-qunit#recommended)
 
 ## TestCafe Tests
 
 - **Usage**
-    Add the following line to your *.eslintrc* file:
+    Add the following line to your *eslint.config.mjs* file:
 
     ```javascript
-    'extends': ['devextreme/testcafe']
+    import { testcafe } from 'eslint-config-devextreme';
+    export default [
+      ...testcafe,
+    ]
+    ``` 
+
+## React
+
+- **Usage**
+    Add the following line to your *eslint.config.mjs* file:
+
+    ```javascript
+    import { react } from 'eslint-config-devextreme';
+    export default [
+      ...react,
+      settings: {
+        react: {
+          version: 'detect',
+        },
+      },
+    ]
+    ``` 
+- **Required packages**
+  - [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react)
+  - [eslint-plugin-react-perf](http://github.com/cvazac/eslint-plugin-react-perf)
+  - [airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
+  - [airbnb-typescript/base](https://github.com/iamturns/eslint-config-airbnb-typescript)
+   - [@stylistic/eslint-plugin](https://github.com/eslint-stylistic/eslint-stylistic)
+
+## Angular
+
+- **Usage**
+    Add the following line to your *eslint.config.mjs* file:
+
+    ```javascript
+    import angular from 'eslint-config-devextreme';
+    export default [
+      ...angular,
+    ]
     ```
+- **Required packages**
+  - [eslint-plugin-no-only-tests](https://github.com/levibuzolic/eslint-plugin-no-only-tests)
 
-- **Environment**
-  - `node` (Node.js global variables and scope)
-  - `browser` (Browser global variables)
-  - `jquery` (jQuery global variables)
+## Vue
 
-- **Additional global variables**
-  - `test`
-  - `fixture`  
+- **Usage**
+    Add the following line to your *eslint.config.mjs* file:
+
+    ```javascript
+    import vue from 'eslint-config-devextreme';
+    export default [
+      ...vue,
+    ]
+    ```
+- **Required packages**
+  - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue)
