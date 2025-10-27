@@ -71,7 +71,7 @@ export default [
     '@typescript-eslint/no-this-alias': 0,
     '@typescript-eslint/no-empty-function': 0,
     '@typescript-eslint/no-explicit-any': 0,
-    '@typescript-eslint/no-unused-vars': 0,
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
     '@typescript-eslint/no-unused-expressions': 0,
     '@typescript-eslint/no-useless-constructor': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0, // was warn
@@ -86,7 +86,7 @@ export default [
     'no-new-func': 'error',
     'no-eval': 'error',
     'no-unused-expressions': 'off',
-    'no-unused-vars': ['error'],
+    'no-unused-vars': 'off',
     'no-extend-native': 'error',
     'no-alert': 'error',
     'no-whitespace-before-property': 'error',
