@@ -6,23 +6,35 @@ on:
       version:
         type: string
         required: true
-        description: Package version (tag name, e.g. v1.0.0)
+        description: Publishing version (tag name)
+
+permissions:
+  id-token: write  # Required for OIDC (Trusted Publishing)
+  contents: read
 
 jobs:
   publish:
     runs-on: ubuntu-latest
+    environment: npmjs
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.version }}
 
-      - uses: actions/setup-node@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '24'
+          cache: 'npm'
           registry-url: 'https://registry.npmjs.org'
 
+      # npm version 11.5.1 or later is required to use Trusted Publishing
+      - name: NPM Version
+        run: npm --version
+
+      - name: Install dependencies
+        run: npm ci
+
       - name: Publish to NPM
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish --access=public
+        run: npm publish
