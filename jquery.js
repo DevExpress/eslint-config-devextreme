@@ -16,7 +16,7 @@ export default [
       'no-only-tests/no-only-tests': 'error',
       'quote-props': ['error', 'consistent'],
       'no-dupe-keys': 0,
-      'no-unused-vars': 0,
+      'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
       'no-undef': 0,
     }
   }
