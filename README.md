@@ -4,6 +4,8 @@ This repository collects ESLint configurations that enforce the code style used 
 
 > **Note**: Adding new configurations is possible but discouraged. Double-check that none of the existing configurations fits for your case before you add a new configuration.
 
+> **⚠️ ESLint 9 Migration Notice**: This package has been migrated to ESLint 9. The Airbnb packages (`eslint-config-airbnb-base` and `eslint-config-airbnb-typescript`) are now **optional** due to peer dependency conflicts with ESLint 9. The configurations will work without these packages. If you need Airbnb style rules, you can install them using `npm install --force` or `npm install --legacy-peer-deps`.
+
 ## Required packages
 - [eslint: 9.18.0](https://www.npmjs.com/package/eslint/v/9.18.0)
 - [@eslint/eslintrc: ^3.3.1](https://www.npmjs.com/package/@eslint/eslintrc)
@@ -35,9 +37,11 @@ This repository collects ESLint configurations that enforce the code style used 
 
 - **Required packages**
   - [@typescript-eslint](https://github.com/typescript-eslint/typescript-eslint)
-  - [airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
   - [@stylistic/eslint-plugin](https://github.com/eslint-stylistic/eslint-stylistic)
   - [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import)
+
+- **Optional packages**
+  - [airbnb-typescript](https://github.com/iamturns/eslint-config-airbnb-typescript) - ⚠️ **Note**: This package has peer dependency conflicts with ESLint 9. It can be installed using `npm install --force` or `npm install --legacy-peer-deps`, but it's not required. The configuration will work without it.
 
   
 - **Extended plugins and configurations**
@@ -55,8 +59,8 @@ This repository collects ESLint configurations that enforce the code style used 
     ]
     ```
   
-- **Required packages**
-  - [`airbnb-base`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
+- **Optional packages**
+  - [`airbnb-base`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) - ⚠️ **Note**: This package has peer dependency conflicts with ESLint 9. It can be installed using `npm install --force` or `npm install --legacy-peer-deps`, but it's not required. The configuration will work without it.
   
 ## Spell Check
 
@@ -151,9 +155,11 @@ Lists words that the spell check should ignore.
 - **Required packages**
   - [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react)
   - [eslint-plugin-react-perf](http://github.com/cvazac/eslint-plugin-react-perf)
-  - [airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
-  - [airbnb-typescript/base](https://github.com/iamturns/eslint-config-airbnb-typescript)
-   - [@stylistic/eslint-plugin](https://github.com/eslint-stylistic/eslint-stylistic)
+  - [@stylistic/eslint-plugin](https://github.com/eslint-stylistic/eslint-stylistic)
+
+- **Optional packages**
+  - [airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) - ⚠️ **Note**: This package has peer dependency conflicts with ESLint 9. It can be installed using `npm install --force` or `npm install --legacy-peer-deps`, but it's not required. The configuration will work without it.
+  - [airbnb-typescript](https://github.com/iamturns/eslint-config-airbnb-typescript) - ⚠️ **Note**: This package has peer dependency conflicts with ESLint 9. It can be installed using `npm install --force` or `npm install --legacy-peer-deps`, but it's not required. The configuration will work without it.
 
 ## Angular
 
