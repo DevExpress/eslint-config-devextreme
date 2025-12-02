@@ -8,16 +8,19 @@ import jsxA11y from 'eslint-plugin-jsx-a11y';
 import { FlatCompat } from "@eslint/eslintrc";
 import { fileURLToPath } from "url";
 import path from "path";
-import { fixLegacyConfigs } from "./utils/index.js";
+import { fixLegacyConfigs, isPackageInstalled } from "./utils/index.js";
 import stylistic from '@stylistic/eslint-plugin'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({ baseDirectory: __dirname });
 
+const airbnbTypescriptConfigs = isPackageInstalled('eslint-config-airbnb-typescript')
+  ? fixLegacyConfigs(compat.extends("eslint-config-airbnb-typescript"))
+  : [];
+
 export default [
-  ...fixLegacyConfigs(compat.extends("eslint-config-airbnb-base")),
-  ...fixLegacyConfigs(compat.extends("eslint-config-airbnb-typescript")),
+  ...airbnbTypescriptConfigs,
   jsxA11y.flatConfigs.recommended,
   reactPlugin.configs.flat.recommended,
   {
