@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-devextreme",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "ESLint Configurations for the DevExtreme Source Code",
   "repository": {
     "type": "git",
@@ -31,10 +31,32 @@
     "eslint-plugin-spellcheck": "^0.0.20",
     "eslint-plugin-vue": "^10.4.0",
     "@stylistic/eslint-plugin": "^5.4.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-airbnb-typescript": "^18.0.0",
     "stylelint": "15.11.0",
-    "stylelint-config-standard": "^33.0.0"
+    "stylelint-config-standard": "^33.0.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-config-airbnb-base": "^15.0.0"
+  },
+  "peerDependenciesMeta": {
+    "eslint-config-airbnb-base": {
+      "optional": true
+    },
+    "eslint-config-airbnb-typescript": {
+      "optional": true
+    }
+  },
+  "overrides": {
+    "eslint-config-airbnb-base": {
+      "peerDependencies": {
+        "eslint": "9.18.0"
+      }
+    },
+    "eslint-config-airbnb-typescript": {
+      "peerDependencies": {
+        "eslint": "9.18.0",
+        "@typescript-eslint/eslint-plugin": "^8.44.0",
+        "@typescript-eslint/parser": "^8.44.0"
+      }
+    }
   },
   "main": "./index.js",
   "keywords": [
