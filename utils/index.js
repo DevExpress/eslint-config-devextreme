@@ -1,4 +1,7 @@
 import { rules as stylisticRules } from '@eslint-stylistic/metadata';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const REMOVED_RULES = [
     '@typescript-eslint/func-call-spacing',
@@ -27,4 +30,13 @@ export const fixLegacyConfigs = (configs) => {
         ...config,
         rules: changeRules(config.rules || {}),
     }));
+};
+
+export const isPackageInstalled = (packageName) => {
+    try {
+        require.resolve(packageName);
+        return true;
+    } catch (e) {
+        return false;
+    }
 };
