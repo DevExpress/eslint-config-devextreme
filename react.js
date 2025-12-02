@@ -15,9 +15,11 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({ baseDirectory: __dirname });
 
-const airbnbTypescriptConfigs = isPackageInstalled('eslint-config-airbnb-typescript')
-  ? fixLegacyConfigs(compat.extends("eslint-config-airbnb-typescript"))
-  : [];
+const airbnbTypescriptConfigs = 
+  isPackageInstalled('eslint-config-airbnb-typescript') &&
+  isPackageInstalled('eslint-config-airbnb-base')
+    ? fixLegacyConfigs(compat.extends("eslint-config-airbnb-typescript"))
+    : [];
 
 export default [
   ...airbnbTypescriptConfigs,
