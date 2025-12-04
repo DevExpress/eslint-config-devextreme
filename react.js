@@ -16,8 +16,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({ baseDirectory: __dirname });
 const require = createRequire(import.meta.url);
-const airbnbBaseConfig = require("./third_party/eslint-config-airbnb-base");
-const airbnbTypescriptConfig = require("./third_party/eslint-config-airbnb-typescript");
+const airbnbBaseConfig = require("./3d_party/eslint-config-airbnb-base");
+const airbnbTypescriptConfig = require("./3d_party/eslint-config-airbnb-typescript");
 
 export default [
   ...fixLegacyConfigs(compat.config(airbnbBaseConfig)),
