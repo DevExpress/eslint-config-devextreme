@@ -3,16 +3,19 @@ import importPlugin from "eslint-plugin-import";
 import stylistic from '@stylistic/eslint-plugin'
 import { FlatCompat } from "@eslint/eslintrc";
 import { fileURLToPath } from "url";
+import { createRequire } from "module";
 import path from "path";
 import { fixLegacyConfigs } from "./utils/index.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({ baseDirectory: __dirname });
+const require = createRequire(import.meta.url);
+const airbnbBaseConfig = require("./third_party/eslint-config-airbnb-base");
 
 export default [
     ...tseslint.configs['flat/recommended'],
-    ...fixLegacyConfigs(compat.extends("eslint-config-airbnb-base")),
+    ...fixLegacyConfigs(compat.config(airbnbBaseConfig)),
     {
         plugins: { 
             '@typescript-eslint': tseslint,
