@@ -1,14 +1,7 @@
-import { FlatCompat } from '@eslint/eslintrc';
-import { fileURLToPath } from 'url';
-import path from 'path';
-import { fixLegacyConfigs } from "./utils/index.js";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({ baseDirectory: __dirname });
+import airbnbBaseConfig from "./airbnb-config-legacy/airbnb-base.js";
 
 export default [
-    ...fixLegacyConfigs(compat.extends("eslint-config-airbnb-base")),
+    ...airbnbBaseConfig,
     {
         rules: {
             'import/prefer-default-export': 'off',
