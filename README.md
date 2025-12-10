@@ -8,8 +8,6 @@ This repository collects ESLint configurations that enforce the code style used 
 
 ## Required packages
 - [eslint: 9.18.0](https://www.npmjs.com/package/eslint/v/9.18.0)
-- [@eslint/eslintrc: ^3.3.1](https://www.npmjs.com/package/@eslint/eslintrc)
-- [@eslint-stylistic/metadata: ^4.4.1](https://www.npmjs.com/package/@eslint-stylistic/metadata/v/4.4.1)
 
 ## List of Configurations
 
