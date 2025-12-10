@@ -5,7 +5,7 @@ import reactPlugin from 'eslint-plugin-react';
 import reactPerf from 'eslint-plugin-react-perf';
 import noOnlyTests from 'eslint-plugin-no-only-tests';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
-import stylistic from '@stylistic/eslint-plugin'
+import stylistic from '@stylistic/eslint-plugin';
 import airbnbBaseConfig from "./airbnb-config-legacy/airbnb-base.js";
 import airbnbTypescriptConfig from "./airbnb-config-legacy/airbnb-typescript.js";
 
