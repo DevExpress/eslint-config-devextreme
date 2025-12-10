@@ -150,6 +150,7 @@ Lists words that the spell check should ignore.
 - **Required packages**
   - [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react)
   - [eslint-plugin-react-perf](http://github.com/cvazac/eslint-plugin-react-perf)
+  - [@typescript-eslint](https://github.com/typescript-eslint/typescript-eslint)
   - [@stylistic/eslint-plugin](https://github.com/eslint-stylistic/eslint-stylistic)
 
 ## Angular
