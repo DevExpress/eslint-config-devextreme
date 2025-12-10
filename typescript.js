@@ -57,7 +57,6 @@ export default [
             '@typescript-eslint/no-namespace': 'error',
             '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
             '@typescript-eslint/no-require-imports': 'error',
-            '@typescript-eslint/explicit-function-return-type': 'error',
             '@typescript-eslint/no-this-alias': 'error',
             '@typescript-eslint/no-unused-expressions': 'error',
             '@typescript-eslint/no-unused-vars': 'error',
