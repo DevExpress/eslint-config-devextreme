@@ -19,14 +19,12 @@ export default [
     'import/extensions': 0,
     'no-use-before-define': 0,
     'prefer-destructuring': 0,
-    'no-param-reassign': ['error', { 'props': false }],
     'no-only-tests/no-only-tests': 'error',
     'eqeqeq': 0,
     'no-plusplus': 0,
     'max-len': 0,
     'max-classes-per-file': 0,
     'consistent-return': 0,
-    'import/extensions': 0,
     'import/no-webpack-loader-syntax': 0,
     'no-restricted-properties': 0,
     'no-restricted-globals': 0,
@@ -110,7 +108,6 @@ export default [
     'vue/no-v-html': 'off',
     'vue/no-v-model-argument': 'off',
     'vue/valid-v-model': 'off',
-    'max-len': 0,
     'vue/max-len': ['error', 100, 2, {
       // eslint-disable-next-line spellcheck/spell-checker
       ignoreUrls: true,
