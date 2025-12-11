@@ -1,16 +1,16 @@
-import tseslint from "@typescript-eslint/eslint-plugin";
+import tsEslint from 'typescript-eslint';
 import importPlugin from "eslint-plugin-import";
 import stylistic from '@stylistic/eslint-plugin';
 import airbnbBaseConfig from "./airbnb-config-legacy/airbnb-base.js";
 import airbnbTypescriptConfig from "./airbnb-config-legacy/airbnb-typescript.js";
 
 export default [
-    ...tseslint.configs['flat/recommended'],
+    ...tsEslint.configs.recommended,
     ...airbnbBaseConfig,
     ...airbnbTypescriptConfig,
     {
         plugins: { 
-            '@typescript-eslint': tseslint,
+            '@typescript-eslint': tsEslint,
             'import': importPlugin,
             '@stylistic': stylistic
         },

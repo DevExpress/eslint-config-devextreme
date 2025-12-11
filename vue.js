@@ -3,13 +3,13 @@
 
 import pluginVue from 'eslint-plugin-vue';
 import noOnlyTests from 'eslint-plugin-no-only-tests';
-import tseslint from "@typescript-eslint/eslint-plugin";
+import tsEslint from "@typescript-eslint/eslint-plugin";
 
 export default [
   ...pluginVue.configs['flat/recommended'],
   {
     plugins: {
-      '@typescript-eslint': tseslint,
+      '@typescript-eslint': tsEslint,
       vue: pluginVue,
       'no-only-tests': noOnlyTests
     },
