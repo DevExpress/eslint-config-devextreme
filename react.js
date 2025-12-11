@@ -8,10 +8,12 @@ import jsxA11y from 'eslint-plugin-jsx-a11y';
 import stylistic from '@stylistic/eslint-plugin';
 import airbnbBaseConfig from "./airbnb-config-legacy/airbnb-base.js";
 import airbnbTypescriptConfig from "./airbnb-config-legacy/airbnb-typescript.js";
+import airbnbTypescriptReactConfig from './airbnb-config-legacy/airbnb-typescript-react.js';
 
 export default [
   ...airbnbBaseConfig,
   ...airbnbTypescriptConfig,
+  ...airbnbTypescriptReactConfig,
   jsxA11y.flatConfigs.recommended,
   reactPlugin.configs.flat.recommended,
   {
