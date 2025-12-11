@@ -1,4 +1,3 @@
-
 import tseslint from "@typescript-eslint/eslint-plugin";
 import stylistic from '@stylistic/eslint-plugin'
 
