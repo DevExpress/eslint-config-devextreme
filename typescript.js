@@ -10,6 +10,7 @@ export default [
     ...airbnbTypescriptConfig,
     {
         plugins: {
+            '@typescript-eslint': tsEslint,
             'import': importPlugin,
             '@stylistic': stylistic
         },
