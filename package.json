@@ -37,5 +37,20 @@
     "eslint",
     "devextreme",
     "devexpress"
-  ]
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./typescript": "./typescript.js",
+    "./spellCheck": "./spell-check.js",
+    "./angular": "./angular.js",
+    "./javascript": "./javascript.js",
+    "./jest": "./jest.js",
+    "./jquery": "./jquery.js",
+    "./qunit": "./qunit.js",
+    "./react": "./react.js",
+    "./testcafe": "./testcafe.js",
+    "./vue": "./vue.js",
+    "./stylelint": "./stylelintrc.js",
+    "./package.json": "./package.json"
+  }
 }

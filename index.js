@@ -8,6 +8,7 @@ import qunit from "./qunit.js";
 import react from "./react.js";
 import testcafe from "./testcafe.js";
 import vue from "./vue.js";
+import stylelint from "./stylelintrc.js";
 
 export {
     typescript,
@@ -19,5 +20,6 @@ export {
     qunit,
     react,
     testcafe,
-    vue
+    vue,
+    stylelint
 };
