@@ -1,11 +1,10 @@
-
-import tseslint from "@typescript-eslint/eslint-plugin";
+import tsEslint from "@typescript-eslint/eslint-plugin";
 import stylistic from '@stylistic/eslint-plugin'
 
 export default [
     {
          plugins: { 
-            '@typescript-eslint': tseslint,
+            '@typescript-eslint': tsEslint,
             '@stylistic': stylistic
         },
         languageOptions: {

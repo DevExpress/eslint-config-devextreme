@@ -1,21 +1,16 @@
-import tseslint from "@typescript-eslint/eslint-plugin";
+import tsEslint from '@typescript-eslint/eslint-plugin';
 import importPlugin from "eslint-plugin-import";
-import stylistic from '@stylistic/eslint-plugin'
-import { FlatCompat } from "@eslint/eslintrc";
-import { fileURLToPath } from "url";
-import path from "path";
-import { fixLegacyConfigs } from "./utils/index.js";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({ baseDirectory: __dirname });
+import stylistic from '@stylistic/eslint-plugin';
+import airbnbBaseConfig from "./airbnb-config-legacy/airbnb-base.js";
+import airbnbTypescriptConfig from "./airbnb-config-legacy/airbnb-typescript.js";
 
 export default [
-    ...tseslint.configs['flat/recommended'],
-    ...fixLegacyConfigs(compat.extends("eslint-config-airbnb-base")),
+    ...tsEslint.configs["flat/recommended"],
+    ...airbnbBaseConfig,
+    ...airbnbTypescriptConfig,
     {
-        plugins: { 
-            '@typescript-eslint': tseslint,
+        plugins: {
+            '@typescript-eslint': tsEslint,
             'import': importPlugin,
             '@stylistic': stylistic
         },
@@ -64,7 +59,6 @@ export default [
             '@typescript-eslint/no-namespace': 'error',
             '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
             '@typescript-eslint/no-require-imports': 'error',
-            '@typescript-eslint/explicit-function-return-type': 'error',
             '@typescript-eslint/no-this-alias': 'error',
             '@typescript-eslint/no-unused-expressions': 'error',
             '@typescript-eslint/no-unused-vars': 'error',

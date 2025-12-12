@@ -4,10 +4,10 @@ This repository collects ESLint configurations that enforce the code style used 
 
 > **Note**: Adding new configurations is possible but discouraged. Double-check that none of the existing configurations fits for your case before you add a new configuration.
 
+> Legacy Airbnb presets are vendored inside this package (`airbnb-config-legacy`), so you no longer need to install `eslint-config-airbnb-base` or `eslint-config-airbnb-typescript`.
+
 ## Required packages
 - [eslint: 9.18.0](https://www.npmjs.com/package/eslint/v/9.18.0)
-- [@eslint/eslintrc: ^3.3.1](https://www.npmjs.com/package/@eslint/eslintrc)
-- [@eslint-stylistic/metadata: ^4.4.1](https://www.npmjs.com/package/@eslint-stylistic/metadata/v/4.4.1)
 
 ## List of Configurations
 
@@ -35,7 +35,6 @@ This repository collects ESLint configurations that enforce the code style used 
 
 - **Required packages**
   - [@typescript-eslint](https://github.com/typescript-eslint/typescript-eslint)
-  - [airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
   - [@stylistic/eslint-plugin](https://github.com/eslint-stylistic/eslint-stylistic)
   - [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import)
 
@@ -56,7 +55,7 @@ This repository collects ESLint configurations that enforce the code style used 
     ```
   
 - **Required packages**
-  - [`airbnb-base`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
+  - [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import)
   
 ## Spell Check
 
@@ -151,9 +150,8 @@ Lists words that the spell check should ignore.
 - **Required packages**
   - [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react)
   - [eslint-plugin-react-perf](http://github.com/cvazac/eslint-plugin-react-perf)
-  - [airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
-  - [airbnb-typescript/base](https://github.com/iamturns/eslint-config-airbnb-typescript)
-   - [@stylistic/eslint-plugin](https://github.com/eslint-stylistic/eslint-stylistic)
+  - [@typescript-eslint](https://github.com/typescript-eslint/typescript-eslint)
+  - [@stylistic/eslint-plugin](https://github.com/eslint-stylistic/eslint-stylistic)
 
 ## Angular
 
