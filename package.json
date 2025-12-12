@@ -50,7 +50,7 @@
     "./react": "./react.js",
     "./testcafe": "./testcafe.js",
     "./vue": "./vue.js",
-    "./stylelint": "./stylelintrc.js",
+    "./stylelintrc": "./stylelintrc.js",
     "./package.json": "./package.json"
   }
 }
