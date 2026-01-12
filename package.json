@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-devextreme",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "ESLint Configurations for the DevExtreme Source Code",
   "repository": {
     "type": "git",
@@ -41,7 +41,7 @@
   "exports": {
     ".": "./index.js",
     "./typescript": "./typescript.js",
-    "./spellCheck": "./spell-check.js",
+    "./spell-check": "./spell-check.js",
     "./angular": "./angular.js",
     "./javascript": "./javascript.js",
     "./jest": "./jest.js",
