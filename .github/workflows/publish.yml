@@ -22,16 +22,15 @@ jobs:
         with:
           ref: ${{ inputs.version }}
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '24'
-          cache: 'npm'
+          cache: 'pnpm'
           registry-url: 'https://registry.npmjs.org'
 
-      # npm version 11.5.1 or later is required to use Trusted Publishing
-      - name: NPM Version
-        run: npm --version
-
       - name: Publish to NPM
-        run: npm publish
+        run: pnpm publish --no-git-checks
