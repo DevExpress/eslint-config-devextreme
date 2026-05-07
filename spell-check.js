@@ -617,6 +617,7 @@ export default [{
                 // JS build-in names
                 'subtree', // mutation observer option
                 'ai', // artificial intelligence
+                'zod', // TypeScript-first schema validation library
             ]
         }]
     }
