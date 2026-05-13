@@ -62,8 +62,5 @@
     "./vue": "./vue.js",
     "./stylelintrc": "./stylelintrc.js",
     "./package.json": "./package.json"
-  },
-  "volta": {
-    "node": "24.15.0"
   }
 }
