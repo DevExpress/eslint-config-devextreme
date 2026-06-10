@@ -1,8 +1,8 @@
 import tsEslint from '@typescript-eslint/eslint-plugin';
 import importPlugin from "eslint-plugin-import";
-import stylistic from '@stylistic/eslint-plugin';
 import airbnbBaseConfig from "./airbnb-config-legacy/airbnb-base.js";
 import airbnbTypescriptConfig from "./airbnb-config-legacy/airbnb-typescript.js";
+import stylistic from '@stylistic/eslint-plugin';
 
 export default [
     ...tsEslint.configs["flat/recommended"],
@@ -25,6 +25,21 @@ export default [
             'import/named': 'error',
             'import/default': 'error',
             'import/no-duplicates': 'error',
+            'no-restricted-syntax': [
+                'error',
+                {
+                    'selector': 'ForInStatement',
+                    'message': 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.'
+                },
+                {
+                    'selector': 'LabeledStatement',
+                    'message': 'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.'
+                },
+                {
+                    'selector': 'WithStatement',
+                    'message': '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.'
+                }
+            ],
             'no-restricted-globals': [
                 'error',
                 {
