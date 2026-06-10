@@ -2,6 +2,7 @@ import tsEslint from '@typescript-eslint/eslint-plugin';
 import importPlugin from "eslint-plugin-import";
 import airbnbBaseConfig from "./airbnb-config-legacy/airbnb-base.js";
 import airbnbTypescriptConfig from "./airbnb-config-legacy/airbnb-typescript.js";
+import stylistic from '@stylistic/eslint-plugin';
 
 export default [
     ...tsEslint.configs["flat/recommended"],
@@ -11,6 +12,7 @@ export default [
         plugins: {
             '@typescript-eslint': tsEslint,
             'import': importPlugin,
+            '@stylistic': stylistic
         },
         languageOptions: {
             parserOptions: {
