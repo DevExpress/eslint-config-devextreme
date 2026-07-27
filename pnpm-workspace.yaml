@@ -6,6 +6,6 @@ overrides:
   '@eslint/plugin-kit': ^0.7.0
   fast-uri@<3.1.4: ^3.1.4
   js-yaml@<4.3.0: ^4.3.0
-  brace-expansion@<1.1.16: ^1.1.16
+  brace-expansion@<1.1.16: ^5.0.8
   brace-expansion@>=3.0.0 <5.0.7: ^5.0.7
   postcss@<8.5.12: ^8.5.12
