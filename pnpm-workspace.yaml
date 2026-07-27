@@ -4,7 +4,7 @@ overrides:
   flatted@<3.4.0: ^3.4.0
   picomatch@>=4.0.0 <4.0.4: ^4.0.4
   '@eslint/plugin-kit': ^0.7.0
-  fast-uri@<3.1.2: ^3.1.2
+  fast-uri@<3.1.4: ^3.1.4
   js-yaml@<4.3.0: ^4.3.0
   brace-expansion@<1.1.16: ^1.1.16
   brace-expansion@>=3.0.0 <5.0.7: ^5.0.7
