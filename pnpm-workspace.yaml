@@ -5,7 +5,7 @@ overrides:
   picomatch@>=4.0.0 <4.0.4: ^4.0.4
   '@eslint/plugin-kit': ^0.7.0
   fast-uri@>=3.0.0 <3.1.5: ^3.1.5
-  js-yaml@<4.3.0: ^4.3.0
+  js-yaml@<4.3.1: ^4.3.1
   brace-expansion@<3.0.0: ^2.1.4
   brace-expansion@>=3.0.0 <5.0.9: ^5.0.9
   postcss@<8.5.23: ^8.5.23
