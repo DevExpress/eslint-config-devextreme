@@ -70,6 +70,7 @@ export default [{
                 'fmt',
                 'msie',
                 'odata',      // OData
+                'osm',        // OpenStreetMap
                 'readonly',
                 'rebase',     // clean-css option
                 'rmdir',
@@ -395,6 +396,7 @@ export default [{
                 'stringify',
                 'struct',
                 'stylesheets',
+                'subdomains', // OSM tile server option
                 'sublevel',
                 'submenu',
                 'submenus',
