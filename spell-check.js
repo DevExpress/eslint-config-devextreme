@@ -281,6 +281,7 @@ export default [{
                 'linepolarseries',
                 'lng',
                 'localizable',
+                'lon',
                 'lookups',
                 'marginate',
                 'matcher',
