@@ -6,17 +6,14 @@ settings:
 
 overrides:
   minimatch@<3.1.4: ^3.1.4
-  minimatch@>=9.0.0 <9.0.6: ^10.2.2
   flatted@<3.4.0: ^3.4.0
   picomatch@>=4.0.0 <4.0.4: ^4.0.4
-  '@eslint/plugin-kit': ^0.7.0
   js-yaml@<4.3.2: ^4.3.2
   brace-expansion@<3.0.0: ^2.1.7
   brace-expansion@>=3.0.0 <5.0.12: ^5.0.12
   postcss@<8.5.23: ^8.5.23
   nanoid@<3.3.18: ^3.3.18
   postcss-selector-parser@<7.1.6: ^7.1.6
-  '@humanfs/node@<0.16.8': ^0.16.8
   colord@<2.9.4: ^2.9.4
   fast-uri@>=3.0.0 <3.1.9: ^3.1.9
   source-map-js@>=1.0.0 <1.2.2: ^1.2.2
@@ -58,9 +55,6 @@ importers:
       eslint-plugin-react-perf:
         specifier: ^3.4.0
         version: 3.4.0(eslint@10.14.0)
-      eslint-plugin-rulesdir:
-        specifier: ^0.2.2
-        version: 0.2.2
       eslint-plugin-spellcheck:
         specifier: ^0.0.20
         version: 0.0.20(eslint@10.14.0)
@@ -139,8 +133,8 @@ packages:
     resolution: {integrity: sha512-vqTaUEgxzm+YDSdElad6PiRoX4t8VGDjCtt05zn4nU810UIx/uNEV7/lZJ6KwFThKZOzOxzXy48da+No7HZaMw==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
-  '@eslint/plugin-kit@0.7.2':
-    resolution: {integrity: sha512-+CNAzxglkrpNf/kKywqQfk74QjtceuOE7Qm+AF8miRvPF/wmmK5+OJOgVh3AVTT3RP2mH3+FOaxlE5v72owk0A==}
+  '@eslint/plugin-kit@0.7.3':
+    resolution: {integrity: sha512-IkO+/KEUvwbVpiURZg+P7zF74z5Jxe0UgJxVni+RtoHQ6IZieXaO02kmadomap/q+l6bc/jdPGGqTjhuZnuz1Q==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
   '@humanfs/core@0.19.2':
@@ -645,10 +639,6 @@ packages:
     engines: {node: '>=4'}
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7
-
-  eslint-plugin-rulesdir@0.2.2:
-    resolution: {integrity: sha512-qhBtmrWgehAIQeMDJ+Q+PnOz1DWUZMPeVrI0wE9NZtnpIMFUfh3aPKFYt2saeMSemZRrvUtjWfYwepsC8X+mjQ==}
-    engines: {node: '>=4.0.0'}
 
   eslint-plugin-spellcheck@0.0.20:
     resolution: {integrity: sha512-GJa6vgzWAYqe0elKADAsiBRrhvqBnKyt7tpFSqlCZJsK2W9+K80oMyHhKolA7vJ13H5RCGs5/KCN+mKUyKoAiA==}
@@ -1755,7 +1745,7 @@ snapshots:
 
   '@eslint/object-schema@3.0.5': {}
 
-  '@eslint/plugin-kit@0.7.2':
+  '@eslint/plugin-kit@0.7.3':
     dependencies:
       '@eslint/core': 1.2.1
       levn: 0.4.1
@@ -2406,8 +2396,6 @@ snapshots:
       string.prototype.matchall: 4.0.12
       string.prototype.repeat: 1.0.0
 
-  eslint-plugin-rulesdir@0.2.2: {}
-
   eslint-plugin-spellcheck@0.0.20(eslint@10.14.0):
     dependencies:
       eslint: 10.14.0
@@ -2449,7 +2437,7 @@ snapshots:
       '@eslint/config-array': 0.23.5
       '@eslint/config-helpers': 0.7.0
       '@eslint/core': 1.2.1
-      '@eslint/plugin-kit': 0.7.2
+      '@eslint/plugin-kit': 0.7.3
       '@humanfs/node': 0.16.8
       '@humanwhocodes/module-importer': 1.0.1
       '@humanwhocodes/retry': 0.4.3
