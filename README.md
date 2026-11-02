@@ -7,7 +7,7 @@ This repository collects ESLint configurations that enforce the code style used 
 > Legacy Airbnb presets are vendored inside this package (`airbnb-config-legacy`), so you no longer need to install `eslint-config-airbnb-base` or `eslint-config-airbnb-typescript`.
 
 ## Required packages
-- [eslint: 9.18.0](https://www.npmjs.com/package/eslint/v/9.18.0)
+- [eslint: ^10.0.0](https://www.npmjs.com/package/eslint)
 
 ## List of Configurations
 

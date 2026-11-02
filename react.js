@@ -27,17 +27,6 @@ export default [
                     ]
                 }
             }
-        },
-        "rules": {
-            "react/jsx-filename-extension": [
-                "error",
-                {
-                    "extensions": [
-                        ".jsx",
-                        ".tsx"
-                    ]
-                }
-            ]
         }
     },
     jsxA11y.flatConfigs.recommended,
@@ -128,7 +117,6 @@ export default [
                     children: 'never',
                 },
             ],
-            "react/jsx-filename-extension": [1, {"extensions": [".ts", ".tsx"]}],
             'react/jsx-fragments': ['error', 'element'],
             'react/jsx-no-bind': [
                 'error',
@@ -138,7 +126,7 @@ export default [
                     ignoreRefs: true,
                 },
             ],
-            'react/jsx-tag-spacing': [
+            '@stylistic/jsx-tag-spacing': [
                 'error',
                 {
                     beforeClosing: 'never',
