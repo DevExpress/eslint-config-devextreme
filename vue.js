@@ -16,7 +16,6 @@ export default [
     rules: {
     'class-methods-use-this': 0, // TODO warn (was error)
     'func-names': 0, // TODO warn (was warn) >500
-    'import/extensions': 0,
     'no-use-before-define': 0,
     'prefer-destructuring': 0,
     'no-only-tests/no-only-tests': 'error',
@@ -25,7 +24,6 @@ export default [
     'max-len': 0,
     'max-classes-per-file': 0,
     'consistent-return': 0,
-    'import/no-webpack-loader-syntax': 0,
     'no-restricted-properties': 0,
     'no-restricted-globals': 0,
     'spellcheck/spell-checker': 0,
@@ -47,11 +45,9 @@ export default [
     'operator-assignment': 0,
     'prefer-const': 0,
     '@typescript-eslint/naming-convention': 0,
-    '@typescript-eslint/no-throw-literal': 0,
     '@typescript-eslint/no-use-before-define': 0,
     '@typescript-eslint/no-shadow': 0,
     '@typescript-eslint/no-loop-func': 0,
-    '@typescript-eslint/ban-types': 0,
     '@typescript-eslint/no-this-alias': 0,
     '@typescript-eslint/no-empty-function': 0,
     '@typescript-eslint/no-explicit-any': 0,

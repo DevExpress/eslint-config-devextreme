@@ -9,7 +9,6 @@ export default [
     rules: {
       'class-methods-use-this': 0, // TODO warn (was error)
       'func-names': 0, // TODO warn (was warn) >500
-      'import/extensions': 0,
       'no-use-before-define': 0,
       'prefer-destructuring': 0,
       'no-param-reassign': ['error', { 'props': false }],
