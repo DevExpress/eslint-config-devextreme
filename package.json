@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-devextreme",
-  "version": "1.1.13",
+  "version": "2.0.0",
   "packageManager": "pnpm@11.7.0+sha512.19cc852c120c7125760f2443ee6be0ca5b40f9f50598de1a09a1f177503e010e57c23c77646e01e761de59bf874fb22a3398c33ab9691fc13eb946b6f0f4d620",
   "description": "ESLint Configurations for the DevExtreme Source Code",
   "repository": {
@@ -17,19 +17,18 @@
   },
   "peerDependencies": {
     "@stylistic/eslint-plugin": "^5.4.0",
-    "@typescript-eslint/eslint-plugin": "^8.44.0",
-    "@typescript-eslint/parser": "^8.44.0",
-    "eslint": "9.39.5",
+    "@typescript-eslint/eslint-plugin": "^8.56.0",
+    "@typescript-eslint/parser": "^8.56.0",
+    "eslint": "^10.14.0",
     "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-jest": "^29.0.1",
+    "eslint-plugin-jest": "^29.13.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-no-only-tests": "^3.3.0",
     "eslint-plugin-qunit": "^8.2.5",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-perf": "^3.3.3",
-    "eslint-plugin-rulesdir": "^0.2.2",
+    "eslint-plugin-react-perf": "^3.4.0",
     "eslint-plugin-spellcheck": "^0.0.20",
-    "eslint-plugin-vue": "^10.4.0",
+    "eslint-plugin-vue": "^10.8.0",
     "stylelint": "15.11.0",
     "stylelint-config-standard": "^33.0.0"
   },
