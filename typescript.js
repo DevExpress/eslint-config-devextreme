@@ -90,7 +90,7 @@ export default [
             '@typescript-eslint/unified-signatures': 'error',
             '@typescript-eslint/no-extraneous-class': 'error',
             '@typescript-eslint/no-dynamic-delete': 'error',
-            '@typescript-eslint/init-declarations': 'error',
+            '@typescript-eslint/init-declarations': ['error', 'always'],
             '@typescript-eslint/member-ordering': [
                 'error',
                 {
