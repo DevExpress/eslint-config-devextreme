@@ -16,7 +16,8 @@ exports[`javascript 1`] = `
   "plain.js:6:1 error indent: Expected indentation of 2 spaces but found 4.",
   "plain.js:6:13 error space-infix-ops: Operator '+' must be spaced.",
   "plain.js:6:16 error space-infix-ops: Operator '+' must be spaced.",
-  "import-order.js crashed in import/order: sourceCode.getTokenOrCommentBefore is not a function"
+  "import-order.js:1:19 error import/extensions: Unexpected use of file extension \\"js\\" for \\"./dep.js\\"",
+  "import-order.js:2:1 error import/order: \`fs\` import should occur before import of \`./dep.js\`"
 ]
 `;
 
@@ -71,7 +72,11 @@ exports[`react 1`] = `
 
 exports[`spell-check 1`] = `
 [
-  "typo.js crashed: Error while loading rule 'spellcheck/spell-checker': context.getSourceCode is not a function"
+  "typo.js:1:14 error spellcheck/spell-checker: You have a misspelled word: recieve on Identifier",
+  "typo.js:1:14 error spellcheck/spell-checker: You have a misspelled word: Datta on Identifier",
+  "typo.js:2:17 error spellcheck/spell-checker: You have a misspelled word: calcualte on Identifier",
+  "typo.js:2:32 error spellcheck/spell-checker: You have a misspelled word: itemz on Identifier",
+  "typo.js:3:10 error spellcheck/spell-checker: You have a misspelled word: itemz on Identifier"
 ]
 `;
 
@@ -101,7 +106,7 @@ exports[`typescript 1`] = `
   "plain.ts:8:1 error @stylistic/indent: Expected indentation of 2 spaces but found 4.",
   "plain.ts:8:13 error @stylistic/space-infix-ops: Operator '+' must be spaced.",
   "plain.ts:8:16 error @stylistic/space-infix-ops: Operator '+' must be spaced.",
-  "import-order.ts crashed in import/order: sourceCode.getTokenOrCommentBefore is not a function"
+  "import-order.ts:2:1 error import/order: \`fs\` import should occur before import of \`./dep\`"
 ]
 `;
 

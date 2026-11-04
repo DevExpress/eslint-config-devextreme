@@ -1,4 +1,7 @@
 import spellcheck from 'eslint-plugin-spellcheck';
+import fixupPluginInPlace from './fixup-plugin.js';
+
+fixupPluginInPlace(spellcheck);
 
 export default [{
     plugins: { spellcheck },

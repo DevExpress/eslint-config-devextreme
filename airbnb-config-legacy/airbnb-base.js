@@ -1,4 +1,7 @@
 import importPlugin from 'eslint-plugin-import';
+import fixupPluginInPlace from '../fixup-plugin.js';
+
+fixupPluginInPlace(importPlugin);
 
 // Vendored output of eslint-config-airbnb-base@15.0.0 processed via FlatCompat.
 
