@@ -352,7 +352,7 @@ const airbnbTypescriptConfig = [
             "no-dupe-keys": "off",
             "no-func-assign": "off",
             "no-import-assign": "off",
-            "no-new-symbol": "off",
+            "no-new-native-nonconstructor": "off",
             "no-obj-calls": "off",
             "no-redeclare": "off",
             "no-setter-return": "off",

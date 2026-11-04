@@ -98,7 +98,6 @@ const airbnbBaseConfig = [
                     "exceptions": []
                 }
             ],
-            "no-native-reassign": "off",
             "no-implicit-coercion": [
                 "off",
                 {
@@ -357,7 +356,6 @@ const airbnbBaseConfig = [
             ],
             "no-unused-private-class-members": "off",
             "no-useless-backreference": "error",
-            "no-negated-in-lhs": "off",
             "require-atomic-updates": "off",
             "use-isnan": "error",
             "valid-typeof": [
@@ -449,24 +447,6 @@ const airbnbBaseConfig = [
             }
         },
         "rules": {}
-    },
-    {
-        "rules": {
-            "callback-return": "off",
-            "global-require": "error",
-            "handle-callback-err": "off",
-            "no-buffer-constructor": "error",
-            "no-mixed-requires": [
-                "off",
-                false
-            ],
-            "no-new-require": "error",
-            "no-path-concat": "error",
-            "no-process-env": "off",
-            "no-process-exit": "off",
-            "no-restricted-modules": "off",
-            "no-sync": "off"
-        }
     },
     {
         "rules": {
@@ -845,7 +825,7 @@ const airbnbBaseConfig = [
             ],
             "no-negated-condition": "off",
             "no-nested-ternary": "error",
-            "no-new-object": "error",
+            "no-object-constructor": "error",
             "no-plusplus": "error",
             "no-restricted-syntax": [
                 "error",
@@ -1080,7 +1060,6 @@ const airbnbBaseConfig = [
     {
         "rules": {
             "init-declarations": "off",
-            "no-catch-shadow": "off",
             "no-delete-var": "error",
             "no-label-var": "error",
             "no-restricted-globals": [
@@ -1240,7 +1219,7 @@ const airbnbBaseConfig = [
             "no-const-assign": "error",
             "no-dupe-class-members": "error",
             "no-duplicate-imports": "off",
-            "no-new-symbol": "error",
+            "no-new-native-nonconstructor": "error",
             "no-restricted-exports": [
                 "error",
                 {
