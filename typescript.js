@@ -3,6 +3,9 @@ import importPlugin from "eslint-plugin-import";
 import airbnbBaseConfig from "./airbnb-config-legacy/airbnb-base.js";
 import airbnbTypescriptConfig from "./airbnb-config-legacy/airbnb-typescript.js";
 import stylistic from '@stylistic/eslint-plugin';
+import fixupPluginInPlace from "./fixup-plugin.js";
+
+fixupPluginInPlace(importPlugin);
 
 export default [
     ...tsEslint.configs["flat/recommended"],
@@ -132,4 +135,4 @@ export default [
             '@stylistic/function-call-spacing': 'error',
         }
     }
-];
+].map((config) => ({ ...config, files: ['**/*.ts?(x)'] }));

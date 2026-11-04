@@ -1,5 +1,8 @@
 import jestPlugin from 'eslint-plugin-jest';
 import importPlugin from "eslint-plugin-import";
+import fixupPluginInPlace from "./fixup-plugin.js";
+
+fixupPluginInPlace(importPlugin);
 
 export default [
     jestPlugin.configs['flat/recommended'],

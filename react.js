@@ -9,6 +9,9 @@ import jsxA11y from 'eslint-plugin-jsx-a11y';
 import stylistic from '@stylistic/eslint-plugin';
 import airbnbBaseConfig from "./airbnb-config-legacy/airbnb-base.js";
 import airbnbTypescriptConfig from "./airbnb-config-legacy/airbnb-typescript.js";
+import fixupPluginInPlace from "./fixup-plugin.js";
+
+fixupPluginInPlace(reactPlugin);
 
 export default [
     ...airbnbBaseConfig,
@@ -54,7 +57,6 @@ export default [
             'import/no-webpack-loader-syntax': 0,
             'no-restricted-properties': 0,
             'no-restricted-globals': 0,
-            'spellcheck/spell-checker': 0,
             'no-mixed-operators': 0,
             'no-useless-concat': 0,
             'no-self-assign': 0,

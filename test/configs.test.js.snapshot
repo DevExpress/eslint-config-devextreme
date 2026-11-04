@@ -2,7 +2,17 @@ exports[`angular 1`] = `
 [
   "widget.js:2:7 error @typescript-eslint/no-unused-vars: 'unused' is assigned a value but never used. Allowed unused vars must match /^_/u.",
   "widget.js:6:3 error @typescript-eslint/no-unused-vars: 'element' is assigned a value but never used. Allowed unused args must match /^_/u.",
-  "widget.js:10:4 error no-only-tests/no-only-tests: it.only not permitted"
+  "widget.js:10:4 error no-only-tests/no-only-tests: it.only not permitted",
+  "plain.ts:4:9 error prefer-template: Unexpected string concatenation.",
+  "plain.ts:4:9 error @stylistic/quotes: Strings must use singlequote.",
+  "plain.ts:5:5 error @typescript-eslint/init-declarations: Variable 'y' should be initialized on declaration.",
+  "plain.ts:6:8 error @typescript-eslint/explicit-function-return-type: Missing return type on function.",
+  "plain.ts:6:30 error @stylistic/comma-spacing: A space is required after ','.",
+  "plain.ts:7:1 error @stylistic/indent: Expected indentation of 2 spaces but found 4.",
+  "plain.ts:8:1 error @stylistic/indent: Expected indentation of 2 spaces but found 4.",
+  "plain.ts:8:13 error @stylistic/space-infix-ops: Operator '+' must be spaced.",
+  "plain.ts:8:16 error @stylistic/space-infix-ops: Operator '+' must be spaced.",
+  "base-rules.ts:3:19 error no-constant-binary-expression: Unexpected comparison to newly constructed object. These two values can never be equal."
 ]
 `;
 
@@ -16,7 +26,9 @@ exports[`javascript 1`] = `
   "plain.js:6:1 error indent: Expected indentation of 2 spaces but found 4.",
   "plain.js:6:13 error space-infix-ops: Operator '+' must be spaced.",
   "plain.js:6:16 error space-infix-ops: Operator '+' must be spaced.",
-  "import-order.js crashed in import/order: sourceCode.getTokenOrCommentBefore is not a function"
+  "import-order.js:1:19 error import/extensions: Unexpected use of file extension \\"js\\" for \\"./dep.js\\"",
+  "import-order.js:2:1 error import/order: \`fs\` import should occur before import of \`./dep.js\`",
+  "modern.js:1:53 error semi: Missing semicolon."
 ]
 `;
 
@@ -33,9 +45,11 @@ exports[`jquery 1`] = `
 [
   "widget.js:1:19 error quote-props: Inconsistently quoted property 'a' found.",
   "widget.js:2:7 error no-unused-vars: 'unused' is assigned a value but never used. Allowed unused vars must match /^_/u.",
+  "widget.js:3:7 error no-underscore-dangle: Unexpected dangling '_' in '_ignored'.",
   "widget.js:6:3 error no-param-reassign: Assignment to function parameter 'element'.",
   "widget.js:6:3 error no-unused-vars: 'element' is assigned a value but never used. Allowed unused args must match /^_/u.",
-  "widget.js:10:4 error no-only-tests/no-only-tests: it.only not permitted"
+  "widget.js:10:4 error no-only-tests/no-only-tests: it.only not permitted",
+  "base-rules.js:3:19 error no-constant-binary-expression: Unexpected comparison to newly constructed object. These two values can never be equal."
 ]
 `;
 
@@ -65,13 +79,50 @@ exports[`react 1`] = `
   "app.tsx:4:12 error @stylistic/jsx-tag-spacing: A space is required before closing bracket",
   "app.tsx:5:7 error react/react-in-jsx-scope: 'React' must be in scope when using JSX",
   "app.tsx:5:7 error @stylistic/jsx-tag-spacing: A space is forbidden after opening bracket",
-  "app.tsx:5:18 error @stylistic/jsx-tag-spacing: A space is forbidden before closing bracket"
+  "app.tsx:5:18 error @stylistic/jsx-tag-spacing: A space is forbidden before closing bracket",
+  "modern.js:1:1 error import/prefer-default-export: Prefer default export on a file with single export.",
+  "modern.js:1:14 error func-style: Expected a function declaration.",
+  "modern.js:1:53 error semi: Missing semicolon."
+]
+`;
+
+exports[`spell-check + angular 1`] = `
+[
+  "typo.js:1:14 error spellcheck/spell-checker: You have a misspelled word: recieve on Identifier",
+  "typo.js:1:14 error spellcheck/spell-checker: You have a misspelled word: Datta on Identifier",
+  "typo.js:2:17 error spellcheck/spell-checker: You have a misspelled word: calcualte on Identifier",
+  "typo.js:2:32 error spellcheck/spell-checker: You have a misspelled word: itemz on Identifier",
+  "typo.js:3:10 error spellcheck/spell-checker: You have a misspelled word: itemz on Identifier"
+]
+`;
+
+exports[`spell-check + react 1`] = `
+[
+  "typo.js:1:14 error spellcheck/spell-checker: You have a misspelled word: recieve on Identifier",
+  "typo.js:1:14 error spellcheck/spell-checker: You have a misspelled word: Datta on Identifier",
+  "typo.js:2:17 error spellcheck/spell-checker: You have a misspelled word: calcualte on Identifier",
+  "typo.js:2:32 error spellcheck/spell-checker: You have a misspelled word: itemz on Identifier",
+  "typo.js:3:10 error spellcheck/spell-checker: You have a misspelled word: itemz on Identifier"
+]
+`;
+
+exports[`spell-check + vue 1`] = `
+[
+  "typo.js:1:14 error spellcheck/spell-checker: You have a misspelled word: recieve on Identifier",
+  "typo.js:1:14 error spellcheck/spell-checker: You have a misspelled word: Datta on Identifier",
+  "typo.js:2:17 error spellcheck/spell-checker: You have a misspelled word: calcualte on Identifier",
+  "typo.js:2:32 error spellcheck/spell-checker: You have a misspelled word: itemz on Identifier",
+  "typo.js:3:10 error spellcheck/spell-checker: You have a misspelled word: itemz on Identifier"
 ]
 `;
 
 exports[`spell-check 1`] = `
 [
-  "typo.js crashed: Error while loading rule 'spellcheck/spell-checker': context.getSourceCode is not a function"
+  "typo.js:1:14 error spellcheck/spell-checker: You have a misspelled word: recieve on Identifier",
+  "typo.js:1:14 error spellcheck/spell-checker: You have a misspelled word: Datta on Identifier",
+  "typo.js:2:17 error spellcheck/spell-checker: You have a misspelled word: calcualte on Identifier",
+  "typo.js:2:32 error spellcheck/spell-checker: You have a misspelled word: itemz on Identifier",
+  "typo.js:3:10 error spellcheck/spell-checker: You have a misspelled word: itemz on Identifier"
 ]
 `;
 
@@ -101,7 +152,7 @@ exports[`typescript 1`] = `
   "plain.ts:8:1 error @stylistic/indent: Expected indentation of 2 spaces but found 4.",
   "plain.ts:8:13 error @stylistic/space-infix-ops: Operator '+' must be spaced.",
   "plain.ts:8:16 error @stylistic/space-infix-ops: Operator '+' must be spaced.",
-  "import-order.ts crashed in import/order: sourceCode.getTokenOrCommentBefore is not a function"
+  "import-order.ts:2:1 error import/order: \`fs\` import should occur before import of \`./dep\`"
 ]
 `;
 
@@ -109,6 +160,7 @@ exports[`vue 1`] = `
 [
   "app.vue:3:5 error vue/require-v-for-key: Elements in iteration expect to have 'v-bind:key' directives.",
   "app.vue:9:9 warning vue/component-definition-name-casing: Property name \\"app\\" is not PascalCase.",
-  "app.vue:11:25 error semi: Missing semicolon."
+  "app.vue:11:25 error semi: Missing semicolon.",
+  "base-rules.js:3:19 error no-constant-binary-expression: Unexpected comparison to newly constructed object. These two values can never be equal."
 ]
 `;
