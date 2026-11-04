@@ -18,7 +18,7 @@ export default [
       'prefer-destructuring': 0,
       'no-param-reassign': ['error', { 'props': false }],
       'no-only-tests/no-only-tests': 'error',
-      'quote-props': ['error', 'consistent'],
+      '@stylistic/quote-props': ['error', 'consistent'],
       'no-dupe-keys': 0,
       'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
       'no-undef': 0,

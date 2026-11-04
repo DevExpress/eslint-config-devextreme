@@ -38,7 +38,6 @@ const airbnbTypescriptConfig = [
             ]
         },
         "rules": {
-            "brace-style": "off",
             "@stylistic/brace-style": [
                 "error",
                 "1tbs",
@@ -71,7 +70,6 @@ const airbnbTypescriptConfig = [
                     ]
                 }
             ],
-            "comma-dangle": "off",
             "@stylistic/comma-dangle": [
                 "error",
                 {
@@ -85,7 +83,6 @@ const airbnbTypescriptConfig = [
                     "tuples": "always-multiline"
                 }
             ],
-            "comma-spacing": "off",
             "@stylistic/comma-spacing": [
                 "error",
                 {
@@ -102,8 +99,6 @@ const airbnbTypescriptConfig = [
                     "allowKeywords": true
                 }
             ],
-            "func-call-spacing": "off",
-            "indent": "off",
             "@stylistic/indent": [
                 "error",
                 2,
@@ -147,7 +142,6 @@ const airbnbTypescriptConfig = [
                     "ignoreComments": false
                 }
             ],
-            "keyword-spacing": "off",
             "@stylistic/keyword-spacing": [
                 "error",
                 {
@@ -166,7 +160,6 @@ const airbnbTypescriptConfig = [
                     }
                 }
             ],
-            "lines-between-class-members": "off",
             "@stylistic/lines-between-class-members": [
                 "error",
                 "always",
@@ -189,7 +182,6 @@ const airbnbTypescriptConfig = [
                     ]
                 }
             ],
-            "no-extra-parens": "off",
             "@stylistic/no-extra-parens": [
                 "off",
                 "all",
@@ -201,7 +193,6 @@ const airbnbTypescriptConfig = [
                     "enforceForArrowConditionals": false
                 }
             ],
-            "no-extra-semi": "off",
             "@stylistic/no-extra-semi": "error",
             "no-implied-eval": "off",
             "no-new-func": "off",
@@ -224,7 +215,6 @@ const airbnbTypescriptConfig = [
             "@typescript-eslint/no-redeclare": "error",
             "no-shadow": "off",
             "@typescript-eslint/no-shadow": "error",
-            "space-before-blocks": "off",
             "@stylistic/space-before-blocks": "error",
             "no-throw-literal": "off",
             "no-unused-expressions": "off",
@@ -256,7 +246,6 @@ const airbnbTypescriptConfig = [
             ],
             "no-useless-constructor": "off",
             "@typescript-eslint/no-useless-constructor": "error",
-            "quotes": "off",
             "@stylistic/quotes": [
                 "error",
                 "single",
@@ -264,12 +253,10 @@ const airbnbTypescriptConfig = [
                     "avoidEscape": true
                 }
             ],
-            "semi": "off",
             "@stylistic/semi": [
                 "error",
                 "always"
             ],
-            "space-before-function-paren": "off",
             "@stylistic/space-before-function-paren": [
                 "error",
                 {
@@ -285,9 +272,7 @@ const airbnbTypescriptConfig = [
                 "error",
                 "in-try-catch"
             ],
-            "space-infix-ops": "off",
             "@stylistic/space-infix-ops": "error",
-            "object-curly-spacing": "off",
             "@stylistic/object-curly-spacing": [
                 "error",
                 "always"
