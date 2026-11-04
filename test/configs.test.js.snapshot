@@ -128,7 +128,7 @@ exports[`spell-check 1`] = `
 
 exports[`stylelintrc 1`] = `
 [
-  "styles.css:5:14 error block-no-empty: Unexpected empty block (block-no-empty)",
+  "styles.css:5:14 error block-no-empty: Empty block (block-no-empty)",
   "styles.css:2:10 error color-hex-length: Expected \\"#FFFFFF\\" to be \\"#FFF\\" (color-hex-length)"
 ]
 `;

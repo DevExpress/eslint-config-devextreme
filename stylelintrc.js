@@ -2,6 +2,7 @@ export default {
     "extends": "stylelint-config-standard",
     "rules": {
         "selector-pseudo-element-no-unknown": [ true, {"ignorePseudoElements": ["ng-deep"]}],
+        "selector-no-invalid": null,
         "font-family-no-missing-generic-family-keyword": null,
         "no-descending-specificity": null,
         "no-empty-source": null
