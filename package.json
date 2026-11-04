@@ -13,7 +13,9 @@
     "name": "Developer Express Inc."
   },
   "scripts": {
-    "version": "pnpm version --no-git-tag-version"
+    "version": "pnpm version --no-git-tag-version",
+    "test": "node --test test/configs.test.js",
+    "test:update": "node --test --test-update-snapshots test/configs.test.js"
   },
   "peerDependencies": {
     "@stylistic/eslint-plugin": "^5.4.0",
