@@ -11,7 +11,8 @@ exports[`angular 1`] = `
   "plain.ts:7:1 error @stylistic/indent: Expected indentation of 2 spaces but found 4.",
   "plain.ts:8:1 error @stylistic/indent: Expected indentation of 2 spaces but found 4.",
   "plain.ts:8:13 error @stylistic/space-infix-ops: Operator '+' must be spaced.",
-  "plain.ts:8:16 error @stylistic/space-infix-ops: Operator '+' must be spaced."
+  "plain.ts:8:16 error @stylistic/space-infix-ops: Operator '+' must be spaced.",
+  "base-rules.ts:3:19 error no-constant-binary-expression: Unexpected comparison to newly constructed object. These two values can never be equal."
 ]
 `;
 
@@ -47,7 +48,8 @@ exports[`jquery 1`] = `
   "widget.js:3:7 error no-underscore-dangle: Unexpected dangling '_' in '_ignored'.",
   "widget.js:6:3 error no-param-reassign: Assignment to function parameter 'element'.",
   "widget.js:6:3 error no-unused-vars: 'element' is assigned a value but never used. Allowed unused args must match /^_/u.",
-  "widget.js:10:4 error no-only-tests/no-only-tests: it.only not permitted"
+  "widget.js:10:4 error no-only-tests/no-only-tests: it.only not permitted",
+  "base-rules.js:3:19 error no-constant-binary-expression: Unexpected comparison to newly constructed object. These two values can never be equal."
 ]
 `;
 
@@ -158,6 +160,7 @@ exports[`vue 1`] = `
 [
   "app.vue:3:5 error vue/require-v-for-key: Elements in iteration expect to have 'v-bind:key' directives.",
   "app.vue:9:9 warning vue/component-definition-name-casing: Property name \\"app\\" is not PascalCase.",
-  "app.vue:11:25 error semi: Missing semicolon."
+  "app.vue:11:25 error semi: Missing semicolon.",
+  "base-rules.js:3:19 error no-constant-binary-expression: Unexpected comparison to newly constructed object. These two values can never be equal."
 ]
 `;
