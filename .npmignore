@@ -4,3 +4,4 @@
 .node-version
 azure-pipelines.yml
 pnpm-workspace.yaml
+test
