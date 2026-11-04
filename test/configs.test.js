@@ -29,7 +29,12 @@ const projectConfig = [
     {
         files: ['**/*.ts', '**/*.tsx'],
         languageOptions: {
-            parserOptions: { project: './tsconfig.json', tsconfigRootDir: fixtures },
+            parserOptions: {
+                project: './tsconfig.json',
+                tsconfigRootDir: fixtures,
+                // With CI=true, typescript-eslint reuses one TypeScript program across the ESLint instances of this process
+                disallowAutomaticSingleRunInference: true,
+            },
         },
     },
     {
