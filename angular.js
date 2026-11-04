@@ -1,9 +1,13 @@
 /* eslint-env node */
 /* eslint-disable quote-props */
+import js from '@eslint/js';
 import tsEslint from "@typescript-eslint/eslint-plugin";
 import noOnlyTests from 'eslint-plugin-no-only-tests';
+import typescript from './typescript.js';
 
 export default [
+    { ...js.configs.recommended, files: ['**/*.ts?(x)'] },
+    ...typescript,
     {
         plugins: {
             'no-only-tests': noOnlyTests,
@@ -24,7 +28,6 @@ export default [
             'import/no-webpack-loader-syntax': 0,
             'no-restricted-properties': 0,
             'no-restricted-globals': 0,
-            'spellcheck/spell-checker': 0,
             'no-mixed-operators': 0,
             'no-useless-concat': 0,
             'no-self-assign': 0,

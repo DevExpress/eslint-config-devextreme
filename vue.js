@@ -1,11 +1,13 @@
 /* eslint-env node */
 /* eslint-disable quote-props */
 
+import js from '@eslint/js';
 import pluginVue from 'eslint-plugin-vue';
 import noOnlyTests from 'eslint-plugin-no-only-tests';
 import tsEslint from "@typescript-eslint/eslint-plugin";
 
 export default [
+  js.configs.recommended,
   ...pluginVue.configs['flat/recommended'],
   {
     plugins: {
@@ -28,7 +30,7 @@ export default [
     'import/no-webpack-loader-syntax': 0,
     'no-restricted-properties': 0,
     'no-restricted-globals': 0,
-    'spellcheck/spell-checker': 0,
+    'no-undef': 0,
     'no-mixed-operators': 0,
     'no-useless-concat': 0,
     'no-self-assign': 0,

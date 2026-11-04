@@ -1563,7 +1563,7 @@ const airbnbBaseConfig = [
     {
         "rules": {},
         "languageOptions": {
-            "ecmaVersion": 2018,
+            "ecmaVersion": "latest",
             "sourceType": "module"
         }
     }
