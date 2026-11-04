@@ -252,5 +252,5 @@ A [Stylelint](https://stylelint.io/) configuration for CSS files.
     ```
 
 - **Required packages**
-  - [stylelint: 15.11.0](https://www.npmjs.com/package/stylelint/v/15.11.0)
+  - [stylelint: ^18.0.0](https://www.npmjs.com/package/stylelint/v/18.0.0)
   - [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
