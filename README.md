@@ -175,7 +175,7 @@ Lists words that the spell check should ignore.
     ];
     ```
 
-    Set the React version explicitly: with `version: 'detect'`, eslint-plugin-react fails on ESLint 10. The rules for *.ts* and *.tsx* files need type information, so point `project` to your *tsconfig.json*. ESLint skips *.jsx* files that no configuration lists: if your project has them, add `{ files: ['**/*.jsx'] }` to the array.
+    The rules for *.ts* and *.tsx* files need type information, so point `project` to your *tsconfig.json*. ESLint skips *.jsx* files that no configuration lists: if your project has them, add `{ files: ['**/*.jsx'] }` to the array.
 
 - **Required packages**
   - [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react)
