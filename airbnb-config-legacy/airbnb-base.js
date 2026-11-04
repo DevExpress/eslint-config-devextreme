@@ -360,7 +360,6 @@ const airbnbBaseConfig = [
             "no-negated-in-lhs": "off",
             "require-atomic-updates": "off",
             "use-isnan": "error",
-            "valid-jsdoc": "off",
             "valid-typeof": [
                 "error",
                 {
@@ -984,7 +983,6 @@ const airbnbBaseConfig = [
                     "avoidEscape": true
                 }
             ],
-            "require-jsdoc": "off",
             "@stylistic/semi": [
                 "error",
                 "always"

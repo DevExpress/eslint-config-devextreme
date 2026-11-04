@@ -172,11 +172,9 @@ export default [
         files: ['**/*.d.ts'],
         rules: {
             '@typescript-eslint/naming-convention': 0,
-            '@typescript-eslint/no-throw-literal': 0,
             '@typescript-eslint/no-use-before-define': 0,
             '@typescript-eslint/no-shadow': 0,
             '@typescript-eslint/no-loop-func': 0,
-            '@typescript-eslint/ban-types': 0,
             '@typescript-eslint/no-this-alias': 0,
             '@typescript-eslint/no-empty-function': 0,
             '@typescript-eslint/no-explicit-any': 0,
