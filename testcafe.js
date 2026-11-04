@@ -29,7 +29,6 @@ export default [
         '@typescript-eslint/no-unsafe-member-access': 'off',
         '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/init-declarations': 'off',
-        '@stylistic/no-unsafe-return': 'off',
         'no-restricted-globals': 'off',
         }
     }

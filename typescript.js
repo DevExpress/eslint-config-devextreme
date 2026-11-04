@@ -64,12 +64,6 @@ export default [
             '@typescript-eslint/no-array-constructor': 'error',
             '@typescript-eslint/no-dupe-class-members': 'error',
             '@typescript-eslint/no-empty-function': 'error',
-            '@typescript-eslint/no-empty-interface': [
-                'error',
-                {
-                    'allowSingleExtends': true
-                }
-            ],
             '@typescript-eslint/no-extra-non-null-assertion': 'error',
             '@typescript-eslint/no-for-in-array': 'error',
             '@typescript-eslint/no-inferrable-types': 'error',
@@ -82,12 +76,10 @@ export default [
             '@typescript-eslint/no-unused-vars': 'error',
             '@typescript-eslint/no-use-before-define': 'error',
             '@typescript-eslint/no-useless-constructor': 'error',
-            '@typescript-eslint/no-var-requires': 'error',
             '@typescript-eslint/prefer-as-const': 'error',
             '@typescript-eslint/prefer-for-of': 'error',
             '@typescript-eslint/prefer-function-type': 'error',
             '@typescript-eslint/prefer-namespace-keyword': 'error',
-            '@typescript-eslint/prefer-ts-expect-error': 'error',
             '@typescript-eslint/triple-slash-reference': 'error',
             '@typescript-eslint/unified-signatures': 'error',
             '@typescript-eslint/no-extraneous-class': 'error',
@@ -100,14 +92,11 @@ export default [
                 }
             ],
             '@typescript-eslint/no-invalid-void-type': 'error',
-            '@typescript-eslint/typedef': 'error',
             '@typescript-eslint/no-invalid-this': 'error',
             '@typescript-eslint/no-explicit-any': 'error',
             '@typescript-eslint/explicit-module-boundary-types': 'error',
             '@typescript-eslint/no-non-null-assertion': 'error',
             '@stylistic/brace-style': 'error',
-            'dot-notation': 'error',
-            'no-implied-eval': 'error',
             'require-await': 'error',
             '@typescript-eslint/prefer-optional-chain': 'error',
             '@typescript-eslint/prefer-readonly': 'error',
