@@ -32,5 +32,11 @@ jobs:
           cache: 'pnpm'
           registry-url: 'https://registry.npmjs.org'
 
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint the fixtures with every config
+        run: pnpm test
+
       - name: Publish to NPM
         run: pnpm publish --no-git-checks
