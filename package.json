@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-devextreme",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "packageManager": "pnpm@11.7.0+sha512.19cc852c120c7125760f2443ee6be0ca5b40f9f50598de1a09a1f177503e010e57c23c77646e01e761de59bf874fb22a3398c33ab9691fc13eb946b6f0f4d620",
   "description": "ESLint Configurations for the DevExtreme Source Code",
   "repository": {
@@ -17,6 +17,10 @@
     "test": "node --test test/configs.test.js",
     "test:update": "node --test --test-update-snapshots test/configs.test.js"
   },
+  "dependencies": {
+    "@eslint/compat": "^2.1.1",
+    "@eslint/js": "^10.0.1"
+  },
   "peerDependencies": {
     "@stylistic/eslint-plugin": "^5.4.0",
     "@typescript-eslint/eslint-plugin": "^8.56.0",
@@ -31,8 +35,8 @@
     "eslint-plugin-react-perf": "^3.4.0",
     "eslint-plugin-spellcheck": "^0.0.20",
     "eslint-plugin-vue": "^10.8.0",
-    "stylelint": "15.11.0",
-    "stylelint-config-standard": "^33.0.0"
+    "stylelint": "^18.0.0",
+    "stylelint-config-standard": "^41.0.0"
   },
   "main": "./index.js",
   "keywords": [

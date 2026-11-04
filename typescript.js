@@ -3,6 +3,9 @@ import importPlugin from "eslint-plugin-import";
 import airbnbBaseConfig from "./airbnb-config-legacy/airbnb-base.js";
 import airbnbTypescriptConfig from "./airbnb-config-legacy/airbnb-typescript.js";
 import stylistic from '@stylistic/eslint-plugin';
+import fixupPluginInPlace from "./fixup-plugin.js";
+
+fixupPluginInPlace(importPlugin);
 
 export default [
     ...tsEslint.configs["flat/recommended"],
@@ -85,7 +88,6 @@ export default [
             '@typescript-eslint/prefer-function-type': 'error',
             '@typescript-eslint/prefer-namespace-keyword': 'error',
             '@typescript-eslint/prefer-ts-expect-error': 'error',
-            'space-before-function-paren': 'off',
             '@typescript-eslint/triple-slash-reference': 'error',
             '@typescript-eslint/unified-signatures': 'error',
             '@typescript-eslint/no-extraneous-class': 'error',
@@ -103,7 +105,7 @@ export default [
             '@typescript-eslint/no-explicit-any': 'error',
             '@typescript-eslint/explicit-module-boundary-types': 'error',
             '@typescript-eslint/no-non-null-assertion': 'error',
-            'brace-style': 'error',
+            '@stylistic/brace-style': 'error',
             'dot-notation': 'error',
             'no-implied-eval': 'error',
             'require-await': 'error',
@@ -132,4 +134,4 @@ export default [
             '@stylistic/function-call-spacing': 'error',
         }
     }
-];
+].map((config) => ({ ...config, files: ['**/*.ts?(x)'] }));
