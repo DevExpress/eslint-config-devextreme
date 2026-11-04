@@ -135,4 +135,4 @@ export default [
             '@stylistic/function-call-spacing': 'error',
         }
     }
-];
+].map((config) => ({ ...config, files: ['**/*.ts?(x)'] }));

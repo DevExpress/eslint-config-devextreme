@@ -8,16 +8,20 @@ import stylelint from 'stylelint';
 const fixtures = path.join(import.meta.dirname, 'fixtures');
 
 const eslintFixtures = {
-    javascript: ['plain.js', 'import-order.js'],
-    typescript: ['plain.ts', 'import-order.ts'],
-    react: ['app.jsx', 'app.tsx'],
+    javascript: ['plain.js', 'import-order.js', 'modern.js'],
+    typescript: ['plain.ts', 'import-order.ts', 'modern.js'],
+    react: ['app.jsx', 'app.tsx', 'modern.js'],
     vue: ['app.vue'],
-    angular: ['widget.js'],
+    angular: ['widget.js', 'plain.ts'],
     jquery: ['widget.js'],
     jest: ['sum.test.js'],
     qunit: ['qunit.test.js'],
     testcafe: ['testcafe.test.js'],
     'spell-check': ['typo.js'],
+    // Projects put the spell check before a framework config
+    'spell-check + angular': ['typo.js'],
+    'spell-check + react': ['typo.js'],
+    'spell-check + vue': ['typo.js'],
 };
 
 // What projects add next to the configs, as the README shows
@@ -52,13 +56,13 @@ async function lintFile(eslint, file) {
 
 for (const [entry, files] of Object.entries(eslintFixtures)) {
     test(entry, async (t) => {
-        const { default: config } = await import(`../${entry}.js`);
+        const configs = await Promise.all(entry.split(' + ').map(async (name) => (await import(`../${name}.js`)).default));
         const eslint = new ESLint({
             cwd: fixtures,
             overrideConfigFile: true,
             overrideConfig: [
                 { files: ['**/*.jsx', '**/*.ts', '**/*.tsx', '**/*.vue'] },
-                ...config,
+                ...configs.flat(),
                 ...projectConfig,
             ],
         });

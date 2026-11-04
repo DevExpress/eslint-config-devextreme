@@ -38,7 +38,7 @@ Each configuration has its own entry point, such as `eslint-config-devextreme/ty
     ];
     ```
 
-    The configuration includes rules that need type information. It reads *tsconfig.json* from the folder where you run ESLint.
+    The configuration applies to *.ts* and *.tsx* files and includes rules that need type information. It reads *tsconfig.json* from the folder where you run ESLint.
 
 - **Required packages**
   - [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint)
@@ -200,9 +200,14 @@ Lists words that the spell check should ignore.
     ];
     ```
 
+    The configuration includes the [TypeScript](#typescript) configuration for *.ts* and *.tsx* files.
+
 - **Required packages**
   - [eslint-plugin-no-only-tests](https://github.com/levibuzolic/eslint-plugin-no-only-tests)
   - [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint)
+  - [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint)
+  - [@stylistic/eslint-plugin](https://github.com/eslint-stylistic/eslint-stylistic)
+  - [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import)
 
 ## Vue
 
@@ -235,8 +240,11 @@ Lists words that the spell check should ignore.
     ];
     ```
 
+    The configuration includes the [JavaScript](#javascript) configuration.
+
 - **Required packages**
   - [eslint-plugin-no-only-tests](https://github.com/levibuzolic/eslint-plugin-no-only-tests)
+  - [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import)
 
 ## Stylelint
 

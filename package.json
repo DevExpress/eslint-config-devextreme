@@ -18,7 +18,8 @@
     "test:update": "node --test --test-update-snapshots test/configs.test.js"
   },
   "dependencies": {
-    "@eslint/compat": "^2.1.1"
+    "@eslint/compat": "^2.1.1",
+    "@eslint/js": "^10.0.1"
   },
   "peerDependencies": {
     "@stylistic/eslint-plugin": "^5.4.0",
