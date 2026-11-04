@@ -64,6 +64,7 @@ Each configuration has its own entry point, such as `eslint-config-devextreme/ty
 
 - **Required packages**
   - [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import)
+  - [@stylistic/eslint-plugin](https://github.com/eslint-stylistic/eslint-stylistic)
 
 ## Spell Check
 
@@ -226,6 +227,7 @@ Lists words that the spell check should ignore.
   - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue)
   - [eslint-plugin-no-only-tests](https://github.com/levibuzolic/eslint-plugin-no-only-tests)
   - [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint)
+  - [@stylistic/eslint-plugin](https://github.com/eslint-stylistic/eslint-stylistic)
 
 ## jQuery
 
@@ -245,6 +247,7 @@ Lists words that the spell check should ignore.
 - **Required packages**
   - [eslint-plugin-no-only-tests](https://github.com/levibuzolic/eslint-plugin-no-only-tests)
   - [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import)
+  - [@stylistic/eslint-plugin](https://github.com/eslint-stylistic/eslint-stylistic)
 
 ## Stylelint
 

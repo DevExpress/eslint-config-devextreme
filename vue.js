@@ -5,6 +5,7 @@ import js from '@eslint/js';
 import pluginVue from 'eslint-plugin-vue';
 import noOnlyTests from 'eslint-plugin-no-only-tests';
 import tsEslint from "@typescript-eslint/eslint-plugin";
+import stylistic from '@stylistic/eslint-plugin';
 
 export default [
   js.configs.recommended,
@@ -13,7 +14,8 @@ export default [
     plugins: {
       '@typescript-eslint': tsEslint,
       vue: pluginVue,
-      'no-only-tests': noOnlyTests
+      'no-only-tests': noOnlyTests,
+      '@stylistic': stylistic
     },
     rules: {
     'class-methods-use-this': 0, // TODO warn (was error)
@@ -24,14 +26,14 @@ export default [
     'no-only-tests/no-only-tests': 'error',
     'eqeqeq': 0,
     'no-plusplus': 0,
-    'max-len': 0,
+    '@stylistic/max-len': 0,
     'max-classes-per-file': 0,
     'consistent-return': 0,
     'import/no-webpack-loader-syntax': 0,
     'no-restricted-properties': 0,
     'no-restricted-globals': 0,
     'no-undef': 0,
-    'no-mixed-operators': 0,
+    '@stylistic/no-mixed-operators': 0,
     'no-useless-concat': 0,
     'no-self-assign': 0,
     'default-case': 0,
@@ -61,32 +63,32 @@ export default [
     '@typescript-eslint/no-unused-expressions': 0,
     '@typescript-eslint/no-useless-constructor': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0, // was warn
-    'block-spacing': 'error',
-    'comma-spacing': 'error',
-    'computed-property-spacing': 'error',
-    'comma-style': ['error', 'last'],
-    'no-multiple-empty-lines': ['error', { max: 1 }],
+    '@stylistic/block-spacing': 'error',
+    '@stylistic/comma-spacing': 'error',
+    '@stylistic/computed-property-spacing': 'error',
+    '@stylistic/comma-style': ['error', 'last'],
+    '@stylistic/no-multiple-empty-lines': ['error', { max: 1 }],
     'no-irregular-whitespace': 'error',
-    'no-multi-spaces': 'error',
-    'no-trailing-spaces': 'error',
+    '@stylistic/no-multi-spaces': 'error',
+    '@stylistic/no-trailing-spaces': 'error',
     'no-new-func': 'error',
     'no-eval': 'error',
     'no-unused-expressions': 'off',
     'no-unused-vars': 'off',
     'no-extend-native': 'error',
     'no-alert': 'error',
-    'no-whitespace-before-property': 'error',
-    'object-curly-spacing': ['error', 'always'],
-    'semi-spacing': 'error',
-    semi: 'error',
-    'space-before-blocks': 'error',
-    'space-before-function-paren': ['error', 'never'],
-    'space-in-parens': 'error',
-    'space-infix-ops': 'error',
-    'space-unary-ops': 'error',
-    'eol-last': ['error', 'always'],
+    '@stylistic/no-whitespace-before-property': 'error',
+    '@stylistic/object-curly-spacing': ['error', 'always'],
+    '@stylistic/semi-spacing': 'error',
+    '@stylistic/semi': 'error',
+    '@stylistic/space-before-blocks': 'error',
+    '@stylistic/space-before-function-paren': ['error', 'never'],
+    '@stylistic/space-in-parens': 'error',
+    '@stylistic/space-infix-ops': 'error',
+    '@stylistic/space-unary-ops': 'error',
+    '@stylistic/eol-last': ['error', 'always'],
     curly: ['error', 'multi-line', 'consistent'],
-    indent: [
+    '@stylistic/indent': [
       'error',
       2,
       {
@@ -97,7 +99,7 @@ export default [
         },
       },
     ],
-    quotes: ['error', 'single', { avoidEscape: true }],
+    '@stylistic/quotes': ['error', 'single', { avoidEscape: true }],
     'prefer-template': 'error',
     'vue/camelcase': 'error',
     'vue/component-name-in-template-casing': 'error',

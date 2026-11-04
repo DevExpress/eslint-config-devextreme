@@ -1,4 +1,5 @@
 import importPlugin from 'eslint-plugin-import';
+import stylistic from '@stylistic/eslint-plugin';
 import fixupPluginInPlace from '../fixup-plugin.js';
 
 fixupPluginInPlace(importPlugin);
@@ -45,7 +46,7 @@ const airbnbBaseConfig = [
                     "allowKeywords": true
                 }
             ],
-            "dot-location": [
+            "@stylistic/dot-location": [
                 "error",
                 "property"
             ],
@@ -90,7 +91,7 @@ const airbnbBaseConfig = [
             "no-extra-bind": "error",
             "no-extra-label": "error",
             "no-fallthrough": "error",
-            "no-floating-decimal": "error",
+            "@stylistic/no-floating-decimal": "error",
             "no-global-assign": [
                 "error",
                 {
@@ -129,7 +130,7 @@ const airbnbBaseConfig = [
                     "detectObjects": false
                 }
             ],
-            "no-multi-spaces": [
+            "@stylistic/no-multi-spaces": [
                 "error",
                 {
                     "ignoreEOLComments": false
@@ -274,7 +275,7 @@ const airbnbBaseConfig = [
             "require-await": "off",
             "require-unicode-regexp": "off",
             "vars-on-top": "error",
-            "wrap-iife": [
+            "@stylistic/wrap-iife": [
                 "error",
                 "outside",
                 {
@@ -312,7 +313,7 @@ const airbnbBaseConfig = [
             "no-empty-character-class": "error",
             "no-ex-assign": "error",
             "no-extra-boolean-cast": "error",
-            "no-extra-parens": [
+            "@stylistic/no-extra-parens": [
                 "off",
                 "all",
                 {
@@ -323,7 +324,7 @@ const airbnbBaseConfig = [
                     "enforceForArrowConditionals": false
                 }
             ],
-            "no-extra-semi": "error",
+            "@stylistic/no-extra-semi": "error",
             "no-func-assign": "error",
             "no-import-assign": "error",
             "no-inner-declarations": "error",
@@ -470,26 +471,26 @@ const airbnbBaseConfig = [
     },
     {
         "rules": {
-            "array-bracket-newline": [
+            "@stylistic/array-bracket-newline": [
                 "off",
                 "consistent"
             ],
-            "array-element-newline": [
+            "@stylistic/array-element-newline": [
                 "off",
                 {
                     "multiline": true,
                     "minItems": 3
                 }
             ],
-            "array-bracket-spacing": [
+            "@stylistic/array-bracket-spacing": [
                 "error",
                 "never"
             ],
-            "block-spacing": [
+            "@stylistic/block-spacing": [
                 "error",
                 "always"
             ],
-            "brace-style": [
+            "@stylistic/brace-style": [
                 "error",
                 "1tbs",
                 {
@@ -519,7 +520,7 @@ const airbnbBaseConfig = [
                     }
                 }
             ],
-            "comma-dangle": [
+            "@stylistic/comma-dangle": [
                 "error",
                 {
                     "arrays": "always-multiline",
@@ -529,14 +530,14 @@ const airbnbBaseConfig = [
                     "functions": "always-multiline"
                 }
             ],
-            "comma-spacing": [
+            "@stylistic/comma-spacing": [
                 "error",
                 {
                     "before": false,
                     "after": true
                 }
             ],
-            "comma-style": [
+            "@stylistic/comma-style": [
                 "error",
                 "last",
                 {
@@ -555,20 +556,20 @@ const airbnbBaseConfig = [
                     }
                 }
             ],
-            "computed-property-spacing": [
+            "@stylistic/computed-property-spacing": [
                 "error",
                 "never"
             ],
             "consistent-this": "off",
-            "eol-last": [
+            "@stylistic/eol-last": [
                 "error",
                 "always"
             ],
-            "function-call-argument-newline": [
+            "@stylistic/function-call-argument-newline": [
                 "error",
                 "consistent"
             ],
-            "func-call-spacing": [
+            "@stylistic/function-call-spacing": [
                 "error",
                 "never"
             ],
@@ -585,18 +586,18 @@ const airbnbBaseConfig = [
                 "off",
                 "expression"
             ],
-            "function-paren-newline": [
+            "@stylistic/function-paren-newline": [
                 "error",
                 "multiline-arguments"
             ],
             "id-denylist": "off",
             "id-length": "off",
             "id-match": "off",
-            "implicit-arrow-linebreak": [
+            "@stylistic/implicit-arrow-linebreak": [
                 "error",
                 "beside"
             ],
-            "indent": [
+            "@stylistic/indent": [
                 "error",
                 2,
                 {
@@ -639,18 +640,18 @@ const airbnbBaseConfig = [
                     "ignoreComments": false
                 }
             ],
-            "jsx-quotes": [
+            "@stylistic/jsx-quotes": [
                 "off",
                 "prefer-double"
             ],
-            "key-spacing": [
+            "@stylistic/key-spacing": [
                 "error",
                 {
                     "beforeColon": false,
                     "afterColon": true
                 }
             ],
-            "keyword-spacing": [
+            "@stylistic/keyword-spacing": [
                 "error",
                 {
                     "before": true,
@@ -668,7 +669,7 @@ const airbnbBaseConfig = [
                     }
                 }
             ],
-            "line-comment-position": [
+            "@stylistic/line-comment-position": [
                 "off",
                 {
                     "position": "above",
@@ -676,30 +677,36 @@ const airbnbBaseConfig = [
                     "applyDefaultPatterns": true
                 }
             ],
-            "linebreak-style": [
+            "@stylistic/linebreak-style": [
                 "error",
                 "unix"
             ],
-            "lines-between-class-members": [
+            "@stylistic/lines-between-class-members": [
                 "error",
                 "always",
                 {
                     "exceptAfterSingleLine": false
                 }
             ],
-            "lines-around-comment": "off",
-            "lines-around-directive": [
+            "@stylistic/lines-around-comment": "off",
+            "@stylistic/padding-line-between-statements": [
                 "error",
                 {
-                    "before": "always",
-                    "after": "always"
+                    "blankLine": "always",
+                    "prev": "directive",
+                    "next": "*"
+                },
+                {
+                    "blankLine": "any",
+                    "prev": "directive",
+                    "next": "directive"
                 }
             ],
             "max-depth": [
                 "off",
                 4
             ],
-            "max-len": [
+            "@stylistic/max-len": [
                 "error",
                 100,
                 2,
@@ -737,17 +744,17 @@ const airbnbBaseConfig = [
                 "off",
                 10
             ],
-            "max-statements-per-line": [
+            "@stylistic/max-statements-per-line": [
                 "off",
                 {
                     "max": 1
                 }
             ],
-            "multiline-comment-style": [
+            "@stylistic/multiline-comment-style": [
                 "off",
                 "starred-block"
             ],
-            "multiline-ternary": [
+            "@stylistic/multiline-ternary": [
                 "off",
                 "never"
             ],
@@ -764,10 +771,8 @@ const airbnbBaseConfig = [
                     ]
                 }
             ],
-            "new-parens": "error",
-            "newline-after-var": "off",
-            "newline-before-return": "off",
-            "newline-per-chained-call": [
+            "@stylistic/new-parens": "error",
+            "@stylistic/newline-per-chained-call": [
                 "error",
                 {
                     "ignoreChainWithDepth": 4
@@ -778,7 +783,7 @@ const airbnbBaseConfig = [
             "no-continue": "error",
             "no-inline-comments": "off",
             "no-lonely-if": "error",
-            "no-mixed-operators": [
+            "@stylistic/no-mixed-operators": [
                 "error",
                 {
                     "groups": [
@@ -827,11 +832,11 @@ const airbnbBaseConfig = [
                     "allowSamePrecedence": false
                 }
             ],
-            "no-mixed-spaces-and-tabs": "error",
+            "@stylistic/no-mixed-spaces-and-tabs": "error",
             "no-multi-assign": [
                 "error"
             ],
-            "no-multiple-empty-lines": [
+            "@stylistic/no-multiple-empty-lines": [
                 "error",
                 {
                     "max": 1,
@@ -862,10 +867,9 @@ const airbnbBaseConfig = [
                     "message": "`with` is disallowed in strict mode because it makes code impossible to predict and optimize."
                 }
             ],
-            "no-spaced-func": "error",
-            "no-tabs": "error",
+            "@stylistic/no-tabs": "error",
             "no-ternary": "off",
-            "no-trailing-spaces": [
+            "@stylistic/no-trailing-spaces": [
                 "error",
                 {
                     "skipBlankLines": false,
@@ -887,19 +891,19 @@ const airbnbBaseConfig = [
                     "defaultAssignment": false
                 }
             ],
-            "no-whitespace-before-property": "error",
-            "nonblock-statement-body-position": [
+            "@stylistic/no-whitespace-before-property": "error",
+            "@stylistic/nonblock-statement-body-position": [
                 "error",
                 "beside",
                 {
                     "overrides": {}
                 }
             ],
-            "object-curly-spacing": [
+            "@stylistic/object-curly-spacing": [
                 "error",
                 "always"
             ],
-            "object-curly-newline": [
+            "@stylistic/object-curly-newline": [
                 "error",
                 {
                     "ObjectExpression": {
@@ -924,7 +928,7 @@ const airbnbBaseConfig = [
                     }
                 }
             ],
-            "object-property-newline": [
+            "@stylistic/object-property-newline": [
                 "error",
                 {
                     "allowAllPropertiesOnSameLine": true
@@ -934,7 +938,7 @@ const airbnbBaseConfig = [
                 "error",
                 "never"
             ],
-            "one-var-declaration-per-line": [
+            "@stylistic/one-var-declaration-per-line": [
                 "error",
                 "always"
             ],
@@ -942,7 +946,7 @@ const airbnbBaseConfig = [
                 "error",
                 "always"
             ],
-            "operator-linebreak": [
+            "@stylistic/operator-linebreak": [
                 "error",
                 "before",
                 {
@@ -951,7 +955,7 @@ const airbnbBaseConfig = [
                     }
                 }
             ],
-            "padded-blocks": [
+            "@stylistic/padded-blocks": [
                 "error",
                 {
                     "blocks": "never",
@@ -962,10 +966,9 @@ const airbnbBaseConfig = [
                     "allowSingleLineBlocks": true
                 }
             ],
-            "padding-line-between-statements": "off",
             "prefer-exponentiation-operator": "error",
             "prefer-object-spread": "error",
-            "quote-props": [
+            "@stylistic/quote-props": [
                 "error",
                 "as-needed",
                 {
@@ -974,7 +977,7 @@ const airbnbBaseConfig = [
                     "numbers": false
                 }
             ],
-            "quotes": [
+            "@stylistic/quotes": [
                 "error",
                 "single",
                 {
@@ -982,18 +985,18 @@ const airbnbBaseConfig = [
                 }
             ],
             "require-jsdoc": "off",
-            "semi": [
+            "@stylistic/semi": [
                 "error",
                 "always"
             ],
-            "semi-spacing": [
+            "@stylistic/semi-spacing": [
                 "error",
                 {
                     "before": false,
                     "after": true
                 }
             ],
-            "semi-style": [
+            "@stylistic/semi-style": [
                 "error",
                 "last"
             ],
@@ -1006,8 +1009,8 @@ const airbnbBaseConfig = [
                 }
             ],
             "sort-vars": "off",
-            "space-before-blocks": "error",
-            "space-before-function-paren": [
+            "@stylistic/space-before-blocks": "error",
+            "@stylistic/space-before-function-paren": [
                 "error",
                 {
                     "anonymous": "always",
@@ -1015,12 +1018,12 @@ const airbnbBaseConfig = [
                     "asyncArrow": "always"
                 }
             ],
-            "space-in-parens": [
+            "@stylistic/space-in-parens": [
                 "error",
                 "never"
             ],
-            "space-infix-ops": "error",
-            "space-unary-ops": [
+            "@stylistic/space-infix-ops": "error",
+            "@stylistic/space-unary-ops": [
                 "error",
                 {
                     "words": true,
@@ -1028,7 +1031,7 @@ const airbnbBaseConfig = [
                     "overrides": {}
                 }
             ],
-            "spaced-comment": [
+            "@stylistic/spaced-comment": [
                 "error",
                 "always",
                 {
@@ -1058,14 +1061,14 @@ const airbnbBaseConfig = [
                     }
                 }
             ],
-            "switch-colon-spacing": [
+            "@stylistic/switch-colon-spacing": [
                 "error",
                 {
                     "after": true,
                     "before": false
                 }
             ],
-            "template-tag-spacing": [
+            "@stylistic/template-tag-spacing": [
                 "error",
                 "never"
             ],
@@ -1073,7 +1076,7 @@ const airbnbBaseConfig = [
                 "error",
                 "never"
             ],
-            "wrap-regex": "off"
+            "@stylistic/wrap-regex": "off"
         }
     },
     {
@@ -1210,11 +1213,11 @@ const airbnbBaseConfig = [
                     "requireReturnForObjectLiteral": false
                 }
             ],
-            "arrow-parens": [
+            "@stylistic/arrow-parens": [
                 "error",
                 "always"
             ],
-            "arrow-spacing": [
+            "@stylistic/arrow-spacing": [
                 "error",
                 {
                     "before": true,
@@ -1222,7 +1225,7 @@ const airbnbBaseConfig = [
                 }
             ],
             "constructor-super": "error",
-            "generator-star-spacing": [
+            "@stylistic/generator-star-spacing": [
                 "error",
                 {
                     "before": false,
@@ -1230,7 +1233,7 @@ const airbnbBaseConfig = [
                 }
             ],
             "no-class-assign": "error",
-            "no-confusing-arrow": [
+            "@stylistic/no-confusing-arrow": [
                 "error",
                 {
                     "allowParens": true
@@ -1312,7 +1315,7 @@ const airbnbBaseConfig = [
             "prefer-spread": "error",
             "prefer-template": "error",
             "require-yield": "error",
-            "rest-spread-spacing": [
+            "@stylistic/rest-spread-spacing": [
                 "error",
                 "never"
             ],
@@ -1331,8 +1334,8 @@ const airbnbBaseConfig = [
                 }
             ],
             "symbol-description": "error",
-            "template-curly-spacing": "error",
-            "yield-star-spacing": [
+            "@stylistic/template-curly-spacing": "error",
+            "@stylistic/yield-star-spacing": [
                 "error",
                 "after"
             ]
@@ -1549,7 +1552,8 @@ const airbnbBaseConfig = [
             "sourceType": "module"
         },
         "plugins": {
-            "import": importPlugin
+            "import": importPlugin,
+            "@stylistic": stylistic
         }
     },
     {
